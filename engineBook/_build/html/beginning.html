@@ -1,0 +1,485 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre-Season Stuff &#8212; My sample book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/spanels-index--0afa1ebdab0bb23b98b56d34c23d9f57.css" />
+    <link rel="stylesheet" type="text/css" href="_static/spanels-variables--ffc7f74dcb1b9eecba2dbcbc22818714.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Daily Entries" href="dailyEntries.html" />
+    <link rel="prev" title="9447H - Change Up - 2020-21 Engineering Notebook" href="intro.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/imgstart.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">My sample book</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   9447H - Change Up - 2020-21 Engineering Notebook
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Pre-Season Stuff
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dailyEntries.html">
+   Daily Entries
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/beginning.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vex-vrc-change-up-game-description">
+   VEX VRC Change up game description
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ways-to-score-in-change-up">
+   Ways to Score in Change Up
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#team-intro">
+   Team Intro
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subdivisions-of-our-team">
+     Subdivisions of our team
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#drive-base-design-matrix">
+   Drive Base Design Matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#robot-designs-matrix">
+   Robot Designs Matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#initial-goals-for-change-up">
+   Initial Goals for Change Up
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#short-term-goals">
+     Short Term goals
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#long-term-goals">
+     Long Term Goals
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="pre-season-stuff">
+<h1>Pre-Season Stuff<a class="headerlink" href="#pre-season-stuff" title="Permalink to this headline">¶</a></h1>
+<p>https://www.roboticseducation.org/documents/2019/08/judge-guide.pdf/#page43</p>
+<p>Example page
+-example of how all pages will be formatted and shows the user how to read the notebook</p>
+<div class="section" id="vex-vrc-change-up-game-description">
+<h2>VEX VRC Change up game description<a class="headerlink" href="#vex-vrc-change-up-game-description" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Change Up Field" src="_images/changeupfield.jpeg" /></p>
+<p>VEX Robotics Competition Change Up is played on a 12’x12’ square field configured as seen above. Two (2) Alliances – one (1) “red” and one (1) “blue” – composed of two (2) Teams each, compete in matches consisting of a fifteen (15) second Autonomous Period, followed by a one minute and forty-five second (1:45) Driver Controlled Period.
+The object of the game is to attain a higher score than the opposing Alliance by placing Balls in Goals, and Connecting Rows.</p>
+<p>Game elements and objects
+-diagrams of the elements and objects, the sizes and weights, and maybe how they are used</p>
+<p>Change up Feild overview
+-Just the 6x6 feild diagrams I do with the corresponding notes for each one (look in old notebooks if you don’t know what that is)</p>
+</div>
+<div class="section" id="ways-to-score-in-change-up">
+<h2>Ways to Score in Change Up<a class="headerlink" href="#ways-to-score-in-change-up" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Objects + Auton</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1 Ball</p></td>
+<td><p>1PT</p></td>
+</tr>
+<tr class="row-odd"><td><p>1 Row</p></td>
+<td><p>6PT</p></td>
+</tr>
+<tr class="row-even"><td><p>Auton Bonus</p></td>
+<td><p>6PT</p></td>
+</tr>
+<tr class="row-odd"><td><p>Auton WP</p></td>
+<td><p>1WP</p></td>
+</tr>
+</tbody>
+</table>
+<p>Every ball is worth one(1) point for their alliance. There is no bonus to owning one(1) goal but if you own three in a row you get an additional six(6) points. If during the autonomous phase you own all three goals in your home row you will get an 1 win point. Both teams can get this bonus and it does not effect the match’s score.</p>
+<p>Change up competition match overview</p>
+<p>Initial Thoughts on the Change Up challenge
+-whatever we think</p>
+<p>Design brief</p>
+</div>
+<div class="section" id="team-intro">
+<h2>Team Intro<a class="headerlink" href="#team-intro" title="Permalink to this headline">¶</a></h2>
+<p>This year our team is composed of 5 people, Brody, Derek, Dylan, Ian, and Jack.</p>
+<ul class="simple">
+<li><p>Brody
+– This is his third year doing VEX Robotics and his third year with us. He is the lead strategist is a drive team member and lead Scout.</p></li>
+<li><p>Derek
+– This is his sixth year doing VEX Robotics and his third year with us. He is on the build team and the driver for our team.</p></li>
+<li><p>Dylan
+– This is his fith year doing VEX Robotics and his second year with us. He is on the build team with Derek.</p></li>
+<li><p>Ian
+– This is his sixth year doing VEX Robotics and his third year with us. He is the lead on our engineering notebook team and is part of the scouting team.</p></li>
+<li><p>Jack
+– This is his sixth year doing VEX Robotics and his third year with us. He is the lead programmer and is on the drive team.</p></li>
+</ul>
+<div class="section" id="subdivisions-of-our-team">
+<h3>Subdivisions of our team<a class="headerlink" href="#subdivisions-of-our-team" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Drive Team
+– Brody, Derek, Jack</p></li>
+<li><p>Scouting Team
+– Brody, Ian</p></li>
+<li><p>Build Team
+– Derek, Dylan</p></li>
+<li><p>Programming Team
+– Jack</p></li>
+<li><p>Engineering Notebook Team
+– Ian, Brody, Derek, Dylan, Jack</p></li>
+</ul>
+<p>Motor page?</p>
+<p>Thoughts about the game (rough)</p>
+<p>Auto very important
+Need to be able to descore
+Holding more than 5 balls in pointless (unless you are hoarding)
+Balls scored in the beginning of match will be descored
+Goals are not very tall
+Skills change is weird but important for high scoring skill runs it’s important to have quicker, high scoring matches this year, especially if we use a skills run that other teams can easily match in score</p>
+<p>Thoughts about the game (refined)</p>
+<p>Because of the advantages that autonomous gives you we need to spend a lot of time programming this season</p>
+</div>
+</div>
+<div class="section" id="drive-base-design-matrix">
+<h2>Drive Base Design Matrix<a class="headerlink" href="#drive-base-design-matrix" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Stability</p></th>
+<th class="head"><p>Traction</p></th>
+<th class="head"><p>Speed</p></th>
+<th class="head"><p>Resistance to  pushing</p></th>
+<th class="head"><p>Strafing</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>X drive</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>Omni</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>Mecanum</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>Omni +  Traction</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>Locked Omni</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>N</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="robot-designs-matrix">
+<h2>Robot Designs Matrix<a class="headerlink" href="#robot-designs-matrix" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Ball Capacity</p></th>
+<th class="head"><p>Complexity</p></th>
+<th class="head"><p>Pros</p></th>
+<th class="head"><p>Cons</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Tray Bot</p></td>
+<td><p>3-6</p></td>
+<td><p>3/5</p></td>
+<td><p>High Capacity</p></td>
+<td><p>Can’t score and descore  at the same time</p></td>
+</tr>
+<tr class="row-odd"><td><p>Snail</p></td>
+<td><p>3-4</p></td>
+<td><p>4/5</p></td>
+<td><p>Can score and descore at the same time</p></td>
+<td><p>Low Ball Capacity</p></td>
+</tr>
+<tr class="row-even"><td><p>Tiny Boi</p></td>
+<td><p>2-3</p></td>
+<td><p>0/5</p></td>
+<td><p>Compact fast drive base</p></td>
+<td><p>Very Low Ball Capacity</p></td>
+</tr>
+</tbody>
+</table>
+<p>Mecanum is most equal drive base
+X-Drive is most manoeuvrable
+Omni isn’t resistant to pushing which can be a problem with this games defence
+Omni and traction is normally used when you need to save motors and we have more than enough motors most of the design we are prototyping</p>
+</div>
+<div class="section" id="initial-goals-for-change-up">
+<h2>Initial Goals for Change Up<a class="headerlink" href="#initial-goals-for-change-up" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="short-term-goals">
+<h3>Short Term goals<a class="headerlink" href="#short-term-goals" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Design a robot with CAD</p></li>
+<li><p>The robot design must be able to score and de-score balls in goals</p></li>
+<li><p>Research different designs that have worked in the past and adjust them to work with balls</p></li>
+<li><p>Create pseudocode for future robot</p></li>
+<li><p>Create Classes for the critical functions of the robot (drive base, arm, Intakes)</p></li>
+<li><p>Begin strategizing 15 sec autons</p></li>
+<li><p>Begin strategizing skills auton</p></li>
+</ul>
+</div>
+<div class="section" id="long-term-goals">
+<h3>Long Term Goals<a class="headerlink" href="#long-term-goals" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Win multiple worlds qualifying awards at the south carolina state competition</p></li>
+<li><p>Win the majority of excellence, skills, and tournament champions awards at competitions we  attend</p></li>
+<li><p>Do well in qualifications to choose a strong teammate in finals</p></li>
+<li><p>Do well in skills to be eligible for excellence</p></li>
+<li><p>Have a high scoring auton that gets the home row and beats the majority of teams inside of South Carolina</p></li>
+</ul>
+<p>Design Brainstorming</p>
+<p>Problem Statement; The challenge of Change Up is to score balls in goals, and connect rows of owned goals to gain more points than the opposing alliance at the end of the match.</p>
+<p>Design Statement; Design, build, test, and compete with a robot capable of efficiently scoring and de-scoring balls in Vex Robotics Competition, Change Up</p>
+<p>Design Constraints;
+The robot must not exceed 18’’ by 18” by 18” before the start of a match
+There is a limit of eight (8) V5 motors per robot
+No custom parts are allowed on the robot</p>
+<p>Robot Criteria;
+Must be capable of scoring balls inside of the goals
+Must be capable of de-scoring balls from the bottom of goals</p>
+<p>Robot Components (ideas);
+Drive base resistant to pushing with strafing capabilities
+Fast intakes to easily collect balls off the ground, and to easily de-score ball from goals
+Lift design, a tray that can hold at least 6 balls and elevate the tray to at least 18.3” (the height of the goals)</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">9447H - Change Up - 2020-21 Engineering Notebook</a>
+    <a class='right-next' id="next-link" href="dailyEntries.html" title="next page">Daily Entries</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book Community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>
