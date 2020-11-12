@@ -625,7 +625,7 @@ Our two other inertial sensors came in today so we were able to test and begin u
 <h2>5/15/20<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>We began creating the GUI for our robot. We will have multiple pages, Auton selection, Sensor values, and a reset page. The Auton selection page will have a 3x3 grid of buttons that resemble the goals on the field. The idea behind it is that depending on our teammate and game plan we will choose exactly which goals we want to score in during the pre auton. Then to the left we will have two buttons for our most common autonomous runs, and a drop down above them to choose which side we are on either Blue or Red. Underneath all of that we will have a clear button in case when choosing the goals we click the wrong one and a start button which will start the auton. In between these two buttons we will have little boxes that light up to show the progress of how many goals we checked.
 To create all of this we used LVGL. We created a button matrix for the 9 goals, a drop down object for the drop down menu, 4 button objects for the preset autons, and the clear and start buttons, and finally 3 checkbox objects for the progress bar. We also discussed how we will do movements autonomously. We know that we want to move the robot on arc paths but currently do not know how to implement this, so further research on how to implement arc paths is needed. Below there is a photo of our current GUI. Below that are the current member functions in the Display class. These functions are what we run during the initalize phase to load the GUI and select things such as the autonomous routine.</p>
-<img src="././_images/5-May/5-15-20/GUI.jpg" alt="GUI.jpg" style="width: 400px;"/>
+<img src="././_images/5-May/5-15-20/GUI.jpg" alt="GUI.jpg" style="width: 400px; -webkit-transform: rotate(270deg);"/>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>class Display{
 	public:
 	/*
@@ -780,7 +780,7 @@ We finished the CAD model today so we can start building in the future. The odom
 <div class="section" id="middle-intakes-and-indexer">
 <h3>Middle Intakes and Indexer<a class="headerlink" href="#middle-intakes-and-indexer" title="Permalink to this headline">¶</a></h3>
 <img src="././_images/7-July/7-26-20/towerFrontView.JPG" alt="towerFrontView.JPG" style="width: 200px;"/>
-<img src="././_images/7-July/7-26-20/towerLeftSideView.JPG" alt="towerLeftSideView.JPG" style="width: 200px;"/>
+<img src="././_images/7-July/7-26-20/towerLeftSideView.JPG" alt="towerLeftSideView.JPG" style="width: 200px; -webkit-transform: rotate(270deg);"/>
 <img src="././_images/7-July/7-26-20/towerRightSideView.JPG" alt="towerRightSideView.JPG" style="width: 200px;"/>
 <img src="././_images/7-July/7-26-20/towerTopView.JPG" alt="towerTopView.JPG" style="width: 200px;"/>
 </div>
@@ -798,10 +798,10 @@ We finished the CAD model today so we can start building in the future. The odom
 <p>Today we made the hood for our robot and started testing how it can score in goals. The hood is made out of rubber bands right now as we do not have the polycarbonate we need to complete the hood like our original design. Currently the hood does have some problems but from more testing we have concluded that they should all be solved with the polycarbonate and foam design.</p>
 <div class="section" id="pictures-of-the-hood">
 <h3>Pictures of the Hood<a class="headerlink" href="#pictures-of-the-hood" title="Permalink to this headline">¶</a></h3>
-<img src="././_images/8-August/8-6-20/hoodFrontView.JPG" alt="hoodFrontView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-6-20/hoodFrontView.JPG" alt="hoodFrontView.JPG" style="width: 150px;"/>
 <img src="././_images/8-August/8-6-20/hoodHingeBackView.JPG" alt="hoodHingeBackView.JPG" style="width: 200px;"/>
 <img src="././_images/8-August/8-6-20/hoodHingeFrontView.JPG" alt="hoodHingeFrontView.JPG" style="width: 175px;"/>
-<img src="././_images/8-August/8-6-20/hoodSideView.JPG" alt="hoodSideView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-6-20/hoodSideView.JPG" alt="hoodSideView.JPG" style="width: 150px;"/>
 </div>
 </div>
 <div class="section" id="id20">
@@ -816,10 +816,10 @@ The hood of our robot can now be locked down using a screw catching on a plate. 
 <img src="././_images/8-August/8-7-20/intakesAroundMiddleGoal.JPG" alt="intakesAroundMiddleGoal.JPG" style="width: 200px;"/>
 <img src="././_images/8-August/8-7-20/rightIntake.JPG" alt="rightIntake.JPG" style="width: 200px;"/>
 <img src="././_images/8-August/8-7-20/rightIntakeJoint.JPG" alt="rightIntakeJoint.JPG" style="width: 200px;"/>
-<img src="././_images/8-August/8-7-20/robotBackView.JPG" alt="robotBackView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
-<img src="././_images/8-August/8-7-20/robotFrontView.JPG" alt="robotFrontView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-7-20/robotBackView.JPG" alt="robotBackView.JPG" style="width: 150px;"/>
+<img src="././_images/8-August/8-7-20/robotFrontView.JPG" alt="robotFrontView.JPG" style="width: 150px;"/>
 <img src="././_images/8-August/8-7-20/robotLeftSideView.JPG" alt="robotLeftSideView.JPG" style="width: 200px;"/>
-<img src="././_images/8-August/8-7-20/robotRightSideView.JPG" alt="robotRightSideView.JPG" style="height: 145px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-7-20/robotRightSideView.JPG" alt="robotRightSideView.JPG" style="height: 145px;"/>
 </div>
 </div>
 <div class="section" id="id21">
@@ -836,9 +836,9 @@ Added missing parts in some areas that were not symmetrical</p>
 <h3>Robot Pictures<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
 <img src="././_images/8-August/8-8-20/middleRollersTopGear.JPG" alt="middleRollersTopGear.JPG" style="width: 200px;"/>
 <img src="././_images/8-August/8-8-20/middleRollersTopGearSideView.JPG" alt="middleRollersTopGearSideView.JPG" style="width: 200px;"/>
-<img src="././_images/8-August/8-8-20/robotBack.JPG" alt="robotBack.JPG" style="width: 200px; -webkit-transform: rotate(180deg);"/>
+<img src="././_images/8-August/8-8-20/robotBack.JPG" alt="robotBack.JPG" style="width: 200px;"/>
 <img src="././_images/8-August/8-8-20/robotBottomView.JPG" alt="robotBottomView.JPG" style="width: 200px;"/>
-<img src="././_images/8-August/8-8-20/robotRamp.JPG" alt="robotRamp.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-8-20/robotRamp.JPG" alt="robotRamp.JPG" style="width: 150px;"/>
 </div>
 </div>
 <div class="section" id="id23">

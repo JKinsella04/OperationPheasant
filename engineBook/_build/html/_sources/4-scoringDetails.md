@@ -24,12 +24,12 @@ Win Points for each Qualification Match.
 ### Figure 2.1
 This *Goal* is *owned* by the Blue Alliance, as the top-most *Ball* is completely within the upper edge of the *Goal*
 
-<img src="../../images/beginning/changeUpScoring1.png" alt="changeUpScoring1.png" style="width: 300px;"/>
+<img src="././_images/beginning/changeUpScoring1.png" alt="changeUpScoring1.png" style="width: 300px;"/>
 
 ### Figure 2.2
 This *Goal* is owned by the Red Alliance, as the top-most *Ball* is not completely within the upper edge of the *Goal*. The top red *Ball* is *Scored* because it is below the upper edge of the *Goal*.
 
-<img src="../../images/beginning/changeUpScoring2.png" alt="changeUpScoring2.png" style="width: 300px;"/>
+<img src="././_images/beginning/changeUpScoring2.png" alt="changeUpScoring2.png" style="width: 300px;"/>
 
 ### Figure 2.3
 This *Goal* is owned by the Blue Alliance, as the top-most *Ball* is not completely within the upper edge of the *Goal*. The two bottom-most *Balls* would both be considered *scored*, as they are partially within the outer edge of the *Goal*.
