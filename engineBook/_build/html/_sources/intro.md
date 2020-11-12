@@ -1,5 +1,5 @@
 # Welcome Page
-<img src="../../images/beginning/v1logo.png" alt="engineBook/images/beginning/v1logo.png" width="1000px;" />
+<img src="../../images/beginning/v1logo.png" alt="/images/beginning/v1logo.png" width="1000px;" />
 
 ## Some Preamble
 This Engineering Notebook was created with Jupyter-book and is hosted on our free github website.
