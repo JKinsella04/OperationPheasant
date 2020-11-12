@@ -86,7 +86,7 @@ Our two other inertial sensors came in today so we were able to test and begin u
 We began creating the GUI for our robot. We will have multiple pages, Auton selection, Sensor values, and a reset page. The Auton selection page will have a 3x3 grid of buttons that resemble the goals on the field. The idea behind it is that depending on our teammate and game plan we will choose exactly which goals we want to score in during the pre auton. Then to the left we will have two buttons for our most common autonomous runs, and a drop down above them to choose which side we are on either Blue or Red. Underneath all of that we will have a clear button in case when choosing the goals we click the wrong one and a start button which will start the auton. In between these two buttons we will have little boxes that light up to show the progress of how many goals we checked.
 To create all of this we used LVGL. We created a button matrix for the 9 goals, a drop down object for the drop down menu, 4 button objects for the preset autons, and the clear and start buttons, and finally 3 checkbox objects for the progress bar. We also discussed how we will do movements autonomously. We know that we want to move the robot on arc paths but currently do not know how to implement this, so further research on how to implement arc paths is needed. Below there is a photo of our current GUI. Below that are the current member functions in the Display class. These functions are what we run during the initalize phase to load the GUI and select things such as the autonomous routine. 
 	
-<img src="././_images/5-May/5-15-20/GUI.jpg" alt="GUI.jpg" style="width: 400px; -webkit-transform: rotate(270deg);"/>
+<img src="././_images/5-May/5-15-20/GUI.jpg" alt="GUI.jpg" style=" text-align:center; width: 400px; -webkit-transform: rotate(270deg);"/>
 
 ``` {code}
 class Display{
@@ -145,6 +145,7 @@ Chassis& Chassis::drive(double target){
     }
 return *this;
 }
+```
 
 ## 6/21/20
 Starting to work on a new robot design with CAD, the biggest advantage of this design over our previous robots is that it can score and de-score at the same time.
