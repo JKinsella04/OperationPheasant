@@ -2,17 +2,17 @@
 
 ## Field Overview
 
-<img src="../../images/beginning/ChangeUpField.png" alt="ChangeUpField.png" style="width: 500px;"/>
+<img src="././_images/beginning/ChangeUpField.png" alt="ChangeUpField.png" style="width: 500px;"/>
 
 ## Figure 1.1
 Top view of the field with *Goals* highlighted.
 
-<img src="../../images/beginning/changeUpGoals.png" alt="ChangeUpJustGoals.png" style="width: 500px;"/>
+<img src="././_images/beginning/changeUpGoals.png" alt="ChangeUpJustGoals.png" style="width: 500px;"/>
 
 ## Figure 1.2
 Top view of the field with **Alliance Stations** and the **Autonomous Line** highlighted.
 
-<img src="../../images/beginning/changeUpAutonLine.PNG" alt="ChangeUpJustAutonLine.png" style="width: 500px;"/>
+<img src="././_images/beginning/changeUpAutonLine.PNG" alt="ChangeUpJustAutonLine.png" style="width: 500px;"/>
 
 ## Figure 1.3
 Top view of the field with Home Row *Goals* highlighted.
