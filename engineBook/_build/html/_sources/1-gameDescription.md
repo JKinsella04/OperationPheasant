@@ -4,3 +4,4 @@ The 2020-2021 VEX VRC Game, Change Up is played on a 12’x12’ square field co
 The object of the game is to attain a higher score than the opposing Alliance by placing Balls in Goals, and Connecting Rows.
 
 <img src="../../images/beginning/ChangeupTopView.png" alt="ChangeupTopView.png" style="width: 1000px;"/>
+<!-- ![logo](././images/beginning/ChangeupTopView.png "logo") -->
