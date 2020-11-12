@@ -77,7 +77,7 @@ Design, build, test, and compete with a Robot capable of efficiently *scoring Ba
 - Less stability but double the speed and height of a 4bar.
 - Complex design.
 
-<img src="././_images/beginning/DR4B.png" alt="DR4B.png" width="300px;"/>
+<img src="././_images/beginning/DR4B.png" alt="DR4B.png" width="470px;" height="265px;"/>
 <img src="././_images/beginning/DR4Bup.png" alt="DR4Bup.png" width="300px;"/>
 
 ### Six bar (6bar)
@@ -85,7 +85,7 @@ Design, build, test, and compete with a Robot capable of efficiently *scoring Ba
 - Stable and simple design.
 
 <img src="././_images/beginning/6_bar_lift.png" alt="6_bar_lift.png" width="300px;"/>
-<img src="././_images/beginning/6bar_up.png" alt="6bar_up.png" height="300px;"/>
+<img src="././_images/beginning/6bar_up.png" alt="6bar_up.png" width="300px;"/>
 
 ## Intake Designs
 
