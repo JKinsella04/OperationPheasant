@@ -34,12 +34,12 @@ This *Goal* is owned by the Red Alliance, as the top-most *Ball* is not complete
 ### Figure 2.3
 This *Goal* is owned by the Blue Alliance, as the top-most *Ball* is not completely within the upper edge of the *Goal*. The two bottom-most *Balls* would both be considered *scored*, as they are partially within the outer edge of the *Goal*.
 
-<img src="../../images/beginning/changeUpScoring3.png" alt="changeUpScoring3.png" style="width: 300px;"/>
+<img src="././_images/beginning/changeUpScoring3.png" alt="changeUpScoring3.png" style="width: 300px;"/>
 
 ### Figure 2.4
 If this situation occurs at the end of a Match, this *Goal* would still be *owned* by the Blue Alliance, and the top-most *Ball* would be *Scored*, even though it is not completely within the upper edge of the *Goal*. No penalty is assessed to the Red Alliance.
 
-<img src="../../images/beginning/changeUpScoring4.png" alt="changeUpScoring4.png" style="width: 300px;"/>
+<img src="././_images/beginning/changeUpScoring4.png" alt="changeUpScoring4.png" style="width: 300px;"/>
 
 ## Scored Ball
 A *ball* is considered *Scored* in a *Goal* if it is not touching a Robot of the same color as the Ball and meets all of the following criteria

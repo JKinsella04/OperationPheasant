@@ -1,7 +1,7 @@
 # Change Up Game Objects and Elements
 
 ## Diagram of a Ball
-<img src="../../images/beginning/redBall.png" alt="redBall.png" style="width: 300px;"/>
+<img src="././_images/beginning/redBall.png" alt="redBall.png" style="width: 300px;"/>
 
 ### Ball Specifications
 - The field contains thirty-two (32) *balls*, sixteen (16) red and sixteen (16) blue *balls* on the normal field. On a Skills field there are only thirty (30) *balls*, fifteen (15) red including the team's pre-load and fifteen (15) blue *balls*.
@@ -15,8 +15,8 @@ Scored in *Goals*.
 
 ## Diagram of the Goals
 
-<img src="../../images/beginning/wallGoal.png" alt="wallGoal.png" style="width: 300px;"/>
-<img src="../../images/beginning/centerGoal.png" alt="centerGoal.png" style="width: 300px;"/>
+<img src="././_images/beginning/wallGoal.png" alt="wallGoal.png" style="width: 300px;"/>
+<img src="././_images/beginning/centerGoal.png" alt="centerGoal.png" style="width: 300px;"/>
 
 ### Goal Specifications
 - One of nine (9) cylinders in which Robots can Score and remove Scored *Balls*. The *Goals* are

@@ -7,23 +7,23 @@ One is a direct-drive mecanum base that is 6 sections long, and 7 sections wide.
 The other drive base is an omni wheel drive base geared 32:84 with 600 rpm motors for an output speed of 257 rpm, we are using this high speed to make up for the lack of strafing that the mecanum drive base has. This base is is 6 sections wide and 7 sections long, which is a better sized drive base for maneuverability but might cause some problems with the future attachments such as tray and intakes
 
 ### 257 RPM Omni Drive Base
-<img src="../../images/4-April/4-27-20/257rpmOmniTestDriveBase.png" alt="257rpmOmniTestDriveBase" style="width: 200px;"/>
-<img src="../../images/4-April/4-27-20/257rpmOmniTestDriveBaseSide.png" alt="257rpmOmniTestDriveBaseSide" style="width: 200px;"/>
-<img src="../../images/4-April/4-27-20/257rpmOmniTestDriveBaseTop.png" alt="257rpmOmniTestDriveBaseTop" style="width: 200px;"/>
+<img src="././_images/4-April/4-27-20/257rpmOmniTestDriveBase.png" alt="257rpmOmniTestDriveBase" style="width: 200px;"/>
+<img src="././_images/4-April/4-27-20/257rpmOmniTestDriveBaseSide.png" alt="257rpmOmniTestDriveBaseSide" style="width: 200px;"/>
+<img src="././_images/4-April/4-27-20/257rpmOmniTestDriveBaseTop.png" alt="257rpmOmniTestDriveBaseTop" style="width: 200px;"/>
 
 ### 200 RPM Mecamun Drive Base
-<img src="../../images/4-April/4-27-20/mecanumDriveBase.png" alt="mecanumDriveBase.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-27-20/mecanumDriveBaseSide.png" alt="mecanumDriveBaseSide" style="width: 200px;"/>
-<img src="../../images/4-April/4-27-20/mecanumDriveBaseTop.png" alt="mecanumDriveBaseTop" style="width: 200px;"/>
+<img src="././_images/4-April/4-27-20/mecanumDriveBase.png" alt="mecanumDriveBase.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-27-20/mecanumDriveBaseSide.png" alt="mecanumDriveBaseSide" style="width: 200px;"/>
+<img src="././_images/4-April/4-27-20/mecanumDriveBaseTop.png" alt="mecanumDriveBaseTop" style="width: 200px;"/>
 
 
 ## 4/28/20
 Today was mostly spent in CAD as we continued to improve the mecanum drive base. We added a 6 bar lift to the back of the drive base powered by 2 motors and running at a 32:64 gear ratio. We do not know what motor speed this motor will be running at because we do not have a physical robot to test different speeds on. We went with a six bar lift because we can mount the lift a lot lower on the robot compared to a 4 bar lift, but it will still reach the 18.3in goals to score in. 
 
 ### 200 RPM Mecanum Drive Base with Tower
-<img src="../../images/4-April/4-28-20/mecanumWithTowers.png" alt="mecanumWithTowers.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-28-20/mecanumWithTowersSide.png" alt="mecanumWithTowersSide" style="width: 200px;"/>
-<img src="../../images/4-April/4-28-20/mecanumWithTowersTop.png" alt="mecanumWithTowersTop" style="width: 200px;"/>
+<img src="././_images/4-April/4-28-20/mecanumWithTowers.png" alt="mecanumWithTowers.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-28-20/mecanumWithTowersSide.png" alt="mecanumWithTowersSide" style="width: 200px;"/>
+<img src="././_images/4-April/4-28-20/mecanumWithTowersTop.png" alt="mecanumWithTowersTop" style="width: 200px;"/>
 
 ## 4/29/20
 Today we completed the CAD of the mecanum drive base robot. We connected a simple 2 stage tray to the 6 bar lift that will unfold using rubber band tension and the force of a ball moving up the tray.
@@ -34,19 +34,19 @@ Today we also worked on the 257rpm omni drive base. We added a third middle whee
 We also started to connect a six bar lift to the robot, we are having problems finding a way to connect the six bar in a way that does not interfere with the center wheel, or any of the other wheels. Because of this the six bar is not connected to the robot fully. The main problem is that unlike the mecanum drive base, this drive base has the six bar lift mounted over the wheels because of its width. In the future if we want to continue using this drive base we need to either move the 6 bar inward away from the wheels, or make the drive base wide.
 
 ### Mecanum Traybot
-<img src="../../images/4-April/4-29-20/fullTraybot.png" alt="fullTraybot.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-29-20/fullTraybotFront.png" alt="fullTrabotFront.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-29-20/fullTraybotSide.png" alt="fullTraybotSide.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-29-20/fullTraybotTop.png" alt="fullTraybotTop.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-29-20/intakesSideMount.png" alt="intakesSideMount.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-29-20/traybotFoldedInSize.png" alt="TrayBotFoldedInSize.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-29-20/traybotWithBalls.png" alt="TraybotWithBalls.png" style="width: 200px; height:175px;"/>
-<img src="../../images/4-April/4-29-20/trayConnections.png" alt="trayConnections.png" style="width: 200px; height:175px;"/>
+<img src="././_images/4-April/4-29-20/fullTraybot.png" alt="fullTraybot.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-29-20/fullTraybotFront.png" alt="fullTrabotFront.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-29-20/fullTraybotSide.png" alt="fullTraybotSide.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-29-20/fullTraybotTop.png" alt="fullTraybotTop.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-29-20/intakesSideMount.png" alt="intakesSideMount.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-29-20/traybotFoldedInSize.png" alt="TrayBotFoldedInSize.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-29-20/traybotWithBalls.png" alt="TraybotWithBalls.png" style="width: 200px; height:175px;"/>
+<img src="././_images/4-April/4-29-20/trayConnections.png" alt="trayConnections.png" style="width: 200px; height:175px;"/>
 
 ### Omni Traybot
-<img src="../../images/4-April/4-29-20/omniTestDriveProgress.png" alt="mecanumWithTowersTop.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-29-20/omniTestDriveProgressFront.png" alt="mecanumWithTowers.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-29-20/omniTestDriveProgressSide.png" alt="mecanumWithTowersSide.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-29-20/omniTestDriveProgress.png" alt="mecanumWithTowersTop.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-29-20/omniTestDriveProgressFront.png" alt="mecanumWithTowers.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-29-20/omniTestDriveProgressSide.png" alt="mecanumWithTowersSide.png" style="width: 200px;"/>
 
 
 ## 4/30/20
@@ -60,23 +60,23 @@ Because we are now using odometry in code, we need to add position trackers to t
 	class Auton{}; //Controls the autonomous routines we run, both skills and autonomous phase.
 
 ### Omni Traybot + Odometry Setup
-<img src="../../images/4-April/4-30-20/omniProgress.png" alt="omniProgress.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-30-20/omniProgressSide.png" alt="omniProgressSide.png" style="width: 200px;"/>
-<img src="../../images/4-April/4-30-20/omniProgressTracking.png" alt="omniProgressTracking.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-30-20/omniProgress.png" alt="omniProgress.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-30-20/omniProgressSide.png" alt="omniProgressSide.png" style="width: 200px;"/>
+<img src="././_images/4-April/4-30-20/omniProgressTracking.png" alt="omniProgressTracking.png" style="width: 200px;"/>
 
 ## 5/4/20
 Today we changed the mecanum drive base cad to have omni wheels similar to the second drive base we had. We did this because the other drive base with omni wheels was having complications with adding the intakes and tray. When we added the omni wheels where the mecanum were, we could make the drive base less wide by 4 holes.
 Our two other inertial sensors came in today so we were able to test and begin understanding 7K’s odometry better. They use 3 different inertial sensors, one for the left set of wheels, one for the right set of wheels, and then a 3rd as backup. Now that we have 3 inertial sensors we will be able to continue understanding 7k’s odometry and begin writing our own odometry and try to improve upon their odometry.
 
 ### New Omni Drive Base
-<img src="../../images/5-May/5-4-20/botSideView.png" alt="botSideView.png" style="width: 200px;"/>
-<img src="../../images/5-May/5-4-20/persp.png" alt="persp.png" style="width: 200px;"/>
+<img src="././_images/5-May/5-4-20/botSideView.png" alt="botSideView.png" style="width: 200px;"/>
+<img src="././_images/5-May/5-4-20/persp.png" alt="persp.png" style="width: 200px;"/>
 
 ## 5/15/20
 We began creating the GUI for our robot. We will have multiple pages, Auton selection, Sensor values, and a reset page. The Auton selection page will have a 3x3 grid of buttons that resemble the goals on the field. The idea behind it is that depending on our teammate and game plan we will choose exactly which goals we want to score in during the pre auton. Then to the left we will have two buttons for our most common autonomous runs, and a drop down above them to choose which side we are on either Blue or Red. Underneath all of that we will have a clear button in case when choosing the goals we click the wrong one and a start button which will start the auton. In between these two buttons we will have little boxes that light up to show the progress of how many goals we checked.
 To create all of this we used LVGL. We created a button matrix for the 9 goals, a drop down object for the drop down menu, 4 button objects for the preset autons, and the clear and start buttons, and finally 3 checkbox objects for the progress bar. We also discussed how we will do movements autonomously. We know that we want to move the robot on arc paths but currently do not know how to implement this, so further research on how to implement arc paths is needed. Below there is a photo of our current GUI. Below that are the current member functions in the Display class. These functions are what we run during the initalize phase to load the GUI and select things such as the autonomous routine. 
 	
-<img src="../../images/5-May/5-15-20/GUI.jpg" alt="GUI.jpg" style="width: 400px;"/>
+<img src="././_images/5-May/5-15-20/GUI.jpg" alt="GUI.jpg" style="width: 400px;"/>
 
 	class Display{
 		public:
@@ -99,7 +99,7 @@ To create all of this we used LVGL. We created a button matrix for the 9 goals, 
 ## 5/16/20
 We wanted to improve the GUI by making it cleaner and have a nice background. Our background now is a galaxy background behind the buttons and then a picture of the field for the auton 3x3 grid. The matrix we had yesterday was made invisible and the buttons moved to positions of each goal according to the picture. The picture of the field also changes based on whether the drop down menu is selected as Red or Blue. When you select one of the goals in the 3x3 it draws a green circle around that goal so it's easy to see which ones have been selected.
 
-<img src="../../images/5-May/5-16-20/newGUI.jpg" alt="newGUI.jpg" style="width: 400px;"/>
+<img src="././_images/5-May/5-16-20/newGUI.jpg" alt="newGUI.jpg" style="width: 400px;"/>
 
 ## 5/31/20
 Because of how important the autonomous phase is now, with the extra win point as well as the fact people are already maxing out the driver skills score, We want to improve our code as much as possible. We are implementing PID, slew rate control, and Odometry into our code for driver and autonomous to improve the consistency. Currently we have a Chassis class, Slew class, and a Display class.(Chassis for drive base member functions, Slew for slew rate control member functions, and Display for LVGL GUI member functions.)  The main two member functions of the Chassis class are drive and turn. The drive member function uses a PD (Proportional, and Derivative) loop that takes the average of the left and right tracking wheels to go to the given position, and uses slew rate control to accelerate up to max speed. The turn member function is similar to the drive member function in using a PD loop with slew rate control but instead of the tracking wheels we are using the average of three inertial sensors that face the North, East and West directions of the robot. We use the average of three because basing it on one will get more and more inaccurate over time whereas three sensors help mitigate that problem.
@@ -143,11 +143,11 @@ less than 2 seconds to completely swap out a full goal
 less than a second to take a ball from the bottom to the top.
 
 ### CAD of New Robot Design
-<img src="../../images/6-June/6-21-20/fullRobot.png" alt="fullRobot.png" style="width: 200px;"/>
-<img src="../../images/6-June/6-21-20/newDrive.png" alt="newDrive.png" style="width: 200px; height: 135px;"/>
-<img src="../../images/6-June/6-21-20/newIntakePosition.png" alt="newIntakePosition.png" style="width: 200px;"/>
-<img src="../../images/6-June/6-21-20/newRobotFront.png" alt="newRobotFront.png" style="width: 200px; height: 150px;"/>
-<img src="../../images/6-June/6-21-20/sideOfNewDrive.png" alt="sideOfNewDrive.png" style="width: 200px; height: 150px;"/>
+<img src="././_images/6-June/6-21-20/fullRobot.png" alt="fullRobot.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-21-20/newDrive.png" alt="newDrive.png" style="width: 200px; height: 135px;"/>
+<img src="././_images/6-June/6-21-20/newIntakePosition.png" alt="newIntakePosition.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-21-20/newRobotFront.png" alt="newRobotFront.png" style="width: 200px; height: 150px;"/>
+<img src="././_images/6-June/6-21-20/sideOfNewDrive.png" alt="sideOfNewDrive.png" style="width: 200px; height: 150px;"/>
 
 ## 6/25/20
  Today the old CAD was redone and finished, with all the problems we were previously having we started over completely with a new drive base and intake system. 
@@ -160,10 +160,10 @@ We have kept the inertial sensors and tracking wheels from the old drive base in
 We have added a vision sensor to hopefully automate the sorting of balls. Whenever we start scoring on a goal the vision sensor can detect the goal and switch to manual sorting mode.
 
 ### Completed CAD
-<img src="../../images/6-June/6-25-20/frontOfSnail.png" alt="frontOfSnail.png" style="width: 200px;"/>
-<img src="../../images/6-June/6-25-20/newSnailSide.png" alt="newSnailSide.png" style="width: 200px;"/>
-<img src="../../images/6-June/6-25-20/perspectiveSnail.png" alt="perspectiveSnail.png" style="width: 200px;"/>
-<img src="../../images/6-June/6-25-20/snailOrtho.png" alt="snailOrtho.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-25-20/frontOfSnail.png" alt="frontOfSnail.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-25-20/newSnailSide.png" alt="newSnailSide.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-25-20/perspectiveSnail.png" alt="perspectiveSnail.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-25-20/snailOrtho.png" alt="snailOrtho.png" style="width: 200px;"/>
 
 ## 6/26/20
 Changed the intakes on the new robot to better fit inside the size requirements. The old intakes could not fold up properly without majorly hitting the back wheels and they would stick out, this was fixed by changing the spacing on the intakes to lift them higher up so they stay above the wheels. We do not know how this change will impact picking up balls as we do not have a physical robot to test this on
@@ -175,8 +175,8 @@ Fixed alignment of back U-channel
 Fixed cortex blocking the right intake motor from folding properly 
 
 ### Intake Changes
-<img src="../../images/6-June/6-26-20/intakeAngle.png" alt="intakeAngle.png" style="width: 200px;"/>
-<img src="../../images/6-June/6-26-20/intakeSide.png" alt="intakeSide.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-26-20/intakeAngle.png" alt="intakeAngle.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-26-20/intakeSide.png" alt="intakeSide.png" style="width: 200px;"/>
 
 ## 6/28/20
 We fixed the Auton Builder. It now stores the inputs from the GUI in independent global variables. The way the Auton Builder works is we press the goal that we want to go to, then the 2nd and 3rd goal we want to go to. After that when it switches to the Autonomous phase the robot knows it starting position and then runs the specific string of code needed to get from the starting position to the wanted goal, then it loops back in the code and based of the new position which is the 1st goal it figures it way to the 2nd goal. It then repeats this to get from the 2nd to the 3rd.
@@ -194,7 +194,7 @@ We fixed the Auton Builder. It now stores the inputs from the GUI in independent
 ## 7/11/20
 Created the buttons for the third tab on the GUI. The third tab is the Reset page, it has 4 buttons that all reset different sensors or motors. There is the “Reset IMUs” which resets the three inertial sensors, “Reset Odom” which resets the tracking wheels, “Reset Vision” which resets the vision sensor, and finally “Reset Chassis” which resets the drive base motors. This page is to help debug and will not be needed to be used in competitions since all the motors and sensors get reset at the beginning of the program so this will mainly be used to debug the robot during practice.
 
-<img src="../../images/7-July/7-11-20/reset.jpg" alt="reset.jpg" style="width: 400px;"/>
+<img src="././_images/7-July/7-11-20/reset.jpg" alt="reset.jpg" style="width: 400px;"/>
 
 
 ## 7/24/20
@@ -205,7 +205,7 @@ We finished the CAD model today so we can start building in the future. The odom
 %%HTML
 <div align="middle">
 <video width="80%" controls>
-      <source src="../../images/7-July/7-24-20/loadingscreen.mp4" type="video/mp4">
+      <source src="././_images/7-July/7-24-20/loadingscreen.mp4" type="video/mp4">
 </video></div>
 
 
@@ -213,19 +213,19 @@ We finished the CAD model today so we can start building in the future. The odom
 Today we started to build the front intakes, they are generally the same shape as the CAD model but we added extra support to the insides to reduce friction. Currently the right side intake spins a bit slower than the left and we are working to fix it. One other improvement that might come in the future is replacing the standoff chain tensioner with spacers to reduce friction on the chain. 
 
 ### Pictures of Changes
-<img src="../../images/7-July/7-25-20/intakeSideViewBack.JPG" alt="intakeSideViewBack.JPG" style="width: 200px;"/>
-<img src="../../images/7-July/7-25-20/intakeSideViewFront.JPG" alt="intakeSideViewFront.JPG" style="width: 200px;"/>
-<img src="../../images/7-July/7-25-20/intakeTopView.JPG" alt="intakeTopView.JPG" style="width: 200px;"/>
+<img src="././_images/7-July/7-25-20/intakeSideViewBack.JPG" alt="intakeSideViewBack.JPG" style="width: 200px;"/>
+<img src="././_images/7-July/7-25-20/intakeSideViewFront.JPG" alt="intakeSideViewFront.JPG" style="width: 200px;"/>
+<img src="././_images/7-July/7-25-20/intakeTopView.JPG" alt="intakeTopView.JPG" style="width: 200px;"/>
 
 
 ## 7/26/20
 We completed building the middle intakes and indexer system today. There were not many problems when building it as we had already designed it in cad. Because we now have this piece of the robot we have started to test out our driver control programs. Initially the motors were reversed but after we fixed that, the intakes pick up balls very quickly. We may slow this down the in the future but for now it seems to be working well.
 
 ### Middle Intakes and Indexer
-<img src="../../images/7-July/7-26-20/towerFrontView.JPG" alt="towerFrontView.JPG" style="width: 200px;"/>
-<img src="../../images/7-July/7-26-20/towerLeftSideView.JPG" alt="towerLeftSideView.JPG" style="width: 200px;"/>
-<img src="../../images/7-July/7-26-20/towerRightSideView.JPG" alt="towerRightSideView.JPG" style="width: 200px;"/>
-<img src="../../images/7-July/7-26-20/towerTopView.JPG" alt="towerTopView.JPG" style="width: 200px;"/>
+<img src="././_images/7-July/7-26-20/towerFrontView.JPG" alt="towerFrontView.JPG" style="width: 200px;"/>
+<img src="././_images/7-July/7-26-20/towerLeftSideView.JPG" alt="towerLeftSideView.JPG" style="width: 200px;"/>
+<img src="././_images/7-July/7-26-20/towerRightSideView.JPG" alt="towerRightSideView.JPG" style="width: 200px;"/>
+<img src="././_images/7-July/7-26-20/towerTopView.JPG" alt="towerTopView.JPG" style="width: 200px;"/>
 
 
 ## 8/1/20
@@ -238,10 +238,10 @@ Changed rubber band position and tension to allow for faster and more efficient 
 Today we made the hood for our robot and started testing how it can score in goals. The hood is made out of rubber bands right now as we do not have the polycarbonate we need to complete the hood like our original design. Currently the hood does have some problems but from more testing we have concluded that they should all be solved with the polycarbonate and foam design.
 
 ### Pictures of the Hood
-<img src="../../images/8-August/8-6-20/hoodFrontView.JPG" alt="hoodFrontView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
-<img src="../../images/8-August/8-6-20/hoodHingeBackView.JPG" alt="hoodHingeBackView.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-6-20/hoodHingeFrontView.JPG" alt="hoodHingeFrontView.JPG" style="width: 175px;"/>
-<img src="../../images/8-August/8-6-20/hoodSideView.JPG" alt="hoodSideView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-6-20/hoodFrontView.JPG" alt="hoodFrontView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-6-20/hoodHingeBackView.JPG" alt="hoodHingeBackView.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-6-20/hoodHingeFrontView.JPG" alt="hoodHingeFrontView.JPG" style="width: 175px;"/>
+<img src="././_images/8-August/8-6-20/hoodSideView.JPG" alt="hoodSideView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
 
 
 ## 8/7/20
@@ -249,16 +249,16 @@ Today we connected the front intakes to the robot and made the hood able to fold
 The hood of our robot can now be locked down using a screw catching on a plate. The hood has a bit more tension then we would like so it does come up sometimes and we might have to rework it in the future, but it will work for testing purposes.
 
 ### Robot Pictures
-<img src="../../images/8-August/8-7-20/allignmentMechanism.JPG" alt="allignmentMechanism.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-7-20/frontOfRobot.JPG" alt="frontOfRobot.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-7-20/hoodStartingPosition.JPG" alt="hoodStartingPosition.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-7-20/intakesAroundMiddleGoal.JPG" alt="intakesAroundMiddleGoal.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-7-20/rightIntake.JPG" alt="rightIntake.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-7-20/rightIntakeJoint.JPG" alt="rightIntakeJoint.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-7-20/robotBackView.JPG" alt="robotBackView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
-<img src="../../images/8-August/8-7-20/robotFrontView.JPG" alt="robotFrontView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
-<img src="../../images/8-August/8-7-20/robotLeftSideView.JPG" alt="robotLeftSideView.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-7-20/robotRightSideView.JPG" alt="robotRightSideView.JPG" style="height: 145px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-7-20/allignmentMechanism.JPG" alt="allignmentMechanism.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-7-20/frontOfRobot.JPG" alt="frontOfRobot.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-7-20/hoodStartingPosition.JPG" alt="hoodStartingPosition.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-7-20/intakesAroundMiddleGoal.JPG" alt="intakesAroundMiddleGoal.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-7-20/rightIntake.JPG" alt="rightIntake.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-7-20/rightIntakeJoint.JPG" alt="rightIntakeJoint.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-7-20/robotBackView.JPG" alt="robotBackView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-7-20/robotFrontView.JPG" alt="robotFrontView.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-7-20/robotLeftSideView.JPG" alt="robotLeftSideView.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-7-20/robotRightSideView.JPG" alt="robotRightSideView.JPG" style="height: 145px; -webkit-transform: rotate(90deg);"/>
 
 
 ## 8/8/20
@@ -272,11 +272,11 @@ Replaced sketchy connected axle in back of robot with one solid axle
 Added missing parts in some areas that were not symmetrical
 
 ### Robot Pictures
-<img src="../../images/8-August/8-8-20/middleRollersTopGear.JPG" alt="middleRollersTopGear.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-8-20/middleRollersTopGearSideView.JPG" alt="middleRollersTopGearSideView.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-8-20/robotBack.JPG" alt="robotBack.JPG" style="width: 200px; -webkit-transform: rotate(180deg);"/>
-<img src="../../images/8-August/8-8-20/robotBottomView.JPG" alt="robotBottomView.JPG" style="width: 200px;"/>
-<img src="../../images/8-August/8-8-20/robotRamp.JPG" alt="robotRamp.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
+<img src="././_images/8-August/8-8-20/middleRollersTopGear.JPG" alt="middleRollersTopGear.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-8-20/middleRollersTopGearSideView.JPG" alt="middleRollersTopGearSideView.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-8-20/robotBack.JPG" alt="robotBack.JPG" style="width: 200px; -webkit-transform: rotate(180deg);"/>
+<img src="././_images/8-August/8-8-20/robotBottomView.JPG" alt="robotBottomView.JPG" style="width: 200px;"/>
+<img src="././_images/8-August/8-8-20/robotRamp.JPG" alt="robotRamp.JPG" style="width: 150px; -webkit-transform: rotate(90deg);"/>
 
 ## 8/10/20
 We updated the Slew::driveSlew(double accel) member function. Before we used to just have slew that increased as the joystick increased but now we have implemented the code to realize when the robot is turning and to automatically slow down the drive base when turning even while pushing the joysticks all the way. This addition to the code helps the driver make turns more accurate and easier. We also redid the slew code for the drive base and implemented a basic P loop that gets the difference of the current joystick position and the current output of the robot it then determines whether it needs to add or subtract to get to the target value and then adds/subtracts the given amount that the human inputted into the member function.
@@ -356,7 +356,7 @@ We began working on the Intake::autoSort() member function. The robot is now abl
 %%HTML
 <div align="middle">
 <video width="50%" controls>
-      <source src="../../images/9-September/9-22-20/45pointAutonRun.mp4" type="video/mp4">
+      <source src="././_images/9-September/9-22-20/45pointAutonRun.mp4" type="video/mp4">
 </video></div>
 
 ## 9/29/20
