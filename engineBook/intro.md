@@ -1,5 +1,5 @@
 # Welcome Page
-<img src="././_images/beginning/v1logo.png" alt="/images/beginning/v1logo.png" width="1000px;" />
+<img src="././_images/v1logo.png" alt="/images/beginning/v1logo.png" width="1000px;" />
 
 <!-- ![logo](././images/beginning/v1logo.png "logo") -->
 
