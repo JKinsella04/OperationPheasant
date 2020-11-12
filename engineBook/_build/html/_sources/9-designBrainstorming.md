@@ -70,8 +70,8 @@ Design, build, test, and compete with a Robot capable of efficiently *scoring Ba
 - Lightweight and simple design.
 - Have a semi high extension.
 
-<!-- <img src="././_images/beginning/4bar.png" alt="4bar.png" width="300px;"/> -->
-<!-- <img src="././_images/beginning/4bar_up.png" alt="4bar_up.png" width="300px;"/> -->
+<img src="././_images/beginning/4bar.png" alt="4bar.png" width="300px;"/>
+<img src="././_images/beginning/4barup.png" alt="4bar_up.png" width="300px;"/>
 
 ### Double Reverse Four Bar (DR4B)
 - Less stability but double the speed and height of a 4bar.
@@ -85,7 +85,7 @@ Design, build, test, and compete with a Robot capable of efficiently *scoring Ba
 - Stable and simple design.
 
 <img src="././_images/beginning/6_bar_lift.png" alt="6_bar_lift.png" width="300px;"/>
-<img src="././_images/beginning/6bar_up.png" alt="6bar_up.png" width="300px;"/>
+<img src="././_images/beginning/6bar_up.png" alt="6bar_up.png" height="300px;"/>
 
 ## Intake Designs
 
