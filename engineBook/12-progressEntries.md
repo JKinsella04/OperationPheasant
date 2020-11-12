@@ -62,10 +62,12 @@ Today we worked on only the 257rpm omni drive base as the mecanum was completed 
 Today we worked on getting pseudocode for the robot. This included creating classes for the critical functions of the robot, and starting to program odometry. We looked at 7K’s code as an example as they were the number one skills team for tower takeover. We ended up talking with them to get a better understanding of how odometry worked. 
 Because we are now using odometry in code, we need to add position trackers to the robot, for this we are using 2.5in omni wheels that have been cut in half to save space, connected to hollowed out c-channels with optical shaft encoders on them. The c channels are attached to the robot at only one point so they are free to rotate, we will be using this to our advantage so we can use a rubber band to tension the trackers to the ground. Below is a list of all the classes that we came up with that we will begin working to create. 
 
-	class Chassis{}; //Controls all drive base mvmt including driver control mvmt.
-	class Intake{}; //Controls all intakes including driver control mvmt and auton mvmt.
-	class Display{}; //Controls all GUI related functions.
-	class Auton{}; //Controls the autonomous routines we run, both skills and autonomous phase.
+```{code}
+class Chassis{}; //Controls all drive base mvmt including driver control mvmt.
+class Intake{}; //Controls all intakes including driver control mvmt and auton mvmt.
+class Display{}; //Controls all GUI related functions.
+class Auton{}; //Controls the autonomous routines we run, both skills and autonomous phase.
+```
 
 ### Omni Traybot + Odometry Setup
 <img src="././_images/4-April/4-30-20/omniProgress.png" alt="omniProgress.png" style="width: 200px;"/>
@@ -86,25 +88,26 @@ To create all of this we used LVGL. We created a button matrix for the 9 goals, 
 	
 <img src="././_images/5-May/5-15-20/GUI.jpg" alt="GUI.jpg" style="width: 400px; -webkit-transform: rotate(270deg);"/>
 
-	class Display{
-		public:
-  		/*
-		Initializes the GUI and sets up Screen and Tabs.
-  		*/
-  		Display& display();
+``` {code}
+class Display{
+	public:
+  	/*
+	Initializes the GUI and sets up Screen and Tabs.
+  	*/
+  	Display& display();
+  	
+	/*
+	Changes background based on Preset DropDown.
+  	*/
+	Display& backgroundcheck();
+  	
+	/*
+  	Creates circles around selected goals.
+  	*/
+  	Display& arcchecker();
+};
+```
 
-  		/*
-		Changes background based on Preset DropDown.
-  		*/
-  		Display& backgroundcheck();
-
-  		/*
-  		Creates circles around selected goals.
-  		*/
-  		Display& arcchecker();
-	};
-
-+++
 
 ## 5/16/20
 We wanted to improve the GUI by making it cleaner and have a nice background. Our background now is a galaxy background behind the buttons and then a picture of the field for the auton 3x3 grid. The matrix we had yesterday was made invisible and the buttons moved to positions of each goal according to the picture. The picture of the field also changes based on whether the drop down menu is selected as Red or Blue. When you select one of the goals in the 3x3 it draws a green circle around that goal so it's easy to see which ones have been selected.
@@ -115,34 +118,33 @@ We wanted to improve the GUI by making it cleaner and have a nice background. Ou
 Because of how important the autonomous phase is now, with the extra win point as well as the fact people are already maxing out the driver skills score, We want to improve our code as much as possible. We are implementing PID, slew rate control, and Odometry into our code for driver and autonomous to improve the consistency. Currently we have a Chassis class, Slew class, and a Display class.(Chassis for drive base member functions, Slew for slew rate control member functions, and Display for LVGL GUI member functions.)  The main two member functions of the Chassis class are drive and turn. The drive member function uses a PD (Proportional, and Derivative) loop that takes the average of the left and right tracking wheels to go to the given position, and uses slew rate control to accelerate up to max speed. The turn member function is similar to the drive member function in using a PD loop with slew rate control but instead of the tracking wheels we are using the average of three inertial sensors that face the North, East and West directions of the robot. We use the average of three because basing it on one will get more and more inaccurate over time whereas three sensors help mitigate that problem.
 We published our code to Github now.
 
-	Chassis& Chassis::drive(double target){
-		isSettled = false;
-    		double averagePos = REncoder.get_value() + LEncoder.get_value()/2;
-    		while(target != averagePos) {
-      			double averagePos = REncoder.get_value() + LEncoder.get_value()/2;
-      			double error = target - averagePos;
-      			double prevError = error;
-      			double derivative = error = prevError;
-      			double power = error*kP_drive + derivative*kD_drive;
-      			if (output <= power + rate_drive) {
-        			output += rate_drive;
-      			}else if(output >= power){
-        			output -= rate_drive;
-      			}
-      			RF.move(-output);
-      			RB.move(-output);
-      			LF.move(output);
-      			LB.move(output);
-      			pros::delay(20);
-      			if(averagePos < target+10 && averagePos > target-10) {
-        			isSettled = true;
-        			break;
-      			}
-    		}
-    	return *this;
-  	}
-
-+++
+```{code}
+Chassis& Chassis::drive(double target){
+	isSettled = false;
+	double averagePos = REncoder.get_value() + LEncoder.get_value()/2;
+	while(target != averagePos) {
+		double averagePos = REncoder.get_value() + LEncoder.get_value()/2;
+      	double error = target - averagePos;
+      	double prevError = error;
+      	double derivative = error = prevError;
+      	double power = error*kP_drive + derivative*kD_drive;
+      	if (output <= power + rate_drive) {
+        	output += rate_drive;
+      	}else if(output >= power){
+        	output -= rate_drive;
+      	}
+      	RF.move(-output);
+      	RB.move(-output);
+      	LF.move(output);
+      	LB.move(output);
+      	pros::delay(20);
+      	if(averagePos < target+10 && averagePos > target-10) {
+        	isSettled = true;
+        	break;
+      	}
+    }
+return *this;
+}
 
 ## 6/21/20
 Starting to work on a new robot design with CAD, the biggest advantage of this design over our previous robots is that it can score and de-score at the same time.
@@ -294,63 +296,62 @@ Added missing parts in some areas that were not symmetrical
 We updated the Slew::driveSlew(double accel) member function. Before we used to just have slew that increased as the joystick increased but now we have implemented the code to realize when the robot is turning and to automatically slow down the drive base when turning even while pushing the joysticks all the way. This addition to the code helps the driver make turns more accurate and easier. We also redid the slew code for the drive base and implemented a basic P loop that gets the difference of the current joystick position and the current output of the robot it then determines whether it needs to add or subtract to get to the target value and then adds/subtracts the given amount that the human inputted into the member function.
 
 ```{code}
-	int Slew::driveSlew(double fwdAccel, double deccel, double revAccel){
-  	leftJoystick = master.get_analog(ANALOG_LEFT_Y);
-  	rightJoystick = master.get_analog(ANALOG_RIGHT_Y);
-  	if(leftJoystick/rightJoystick < 0 || leftJoystick/rightJoystick >=2)driveMax =6000;
-  	if(rightJoystick/leftJoystick < 0 || rightJoystick/leftJoystick >=2)driveMax =6000;
+int Slew::driveSlew(double fwdAccel, double deccel, double revAccel){
+leftJoystick = master.get_analog(ANALOG_LEFT_Y);
+rightJoystick = master.get_analog(ANALOG_RIGHT_Y);
+if(leftJoystick/rightJoystick < 0 || leftJoystick/rightJoystick >=2)driveMax =6000;
+if(rightJoystick/leftJoystick < 0 || rightJoystick/leftJoystick >=2)driveMax =6000;
 
-  	if(master.get_analog(ANALOG_LEFT_Y) < 5 && master.get_analog(ANALOG_LEFT_Y) > -5 ) leftJoystick = 0;
-  	if(master.get_analog(ANALOG_RIGHT_Y) < 5 && master.get_analog(ANALOG_RIGHT_Y) > -5 ) rightJoystick = 0;
+if(master.get_analog(ANALOG_LEFT_Y) < 5 && master.get_analog(ANALOG_LEFT_Y) > -5 ) leftJoystick = 0;
+if(master.get_analog(ANALOG_RIGHT_Y) < 5 && master.get_analog(ANALOG_RIGHT_Y) > -5 ) rightJoystick = 0;
 
-  	leftError = leftJoystick*94.488 - LslewOutput; //1.58
-  	leftOvershoot = deccel - abs(LslewOutput);
-  	if(abs(leftError) == 400)LslewOutput = 0;
-  	if(leftError > 0){if(leftJoystick == 0){ if(leftOvershoot >0){deccel -= leftOvershoot;}LslewOutput +=deccel;}else if(LslewOutput < driveMax){LslewOutput +=fwdAccel;}}
-  	if(leftError < 0){if(leftJoystick == 0){ if(leftOvershoot >0){deccel -= leftOvershoot;}LslewOutput -=deccel;}else if(LslewOutput > -driveMax){LslewOutput -=revAccel;}}
-  	rightError = rightJoystick*94.488 - RslewOutput;
-  	rightOvershoot = deccel - abs(RslewOutput);
-  	if(abs(rightError) == 400) RslewOutput = 0;
-  	if(rightError > 0){if(rightJoystick == 0){ if(rightOvershoot >0){deccel -= rightOvershoot;}RslewOutput +=deccel;}else if(RslewOutput < driveMax){RslewOutput +=fwdAccel;}}
-  	if(rightError < 0){if(rightJoystick == 0){ if(rightOvershoot >0){deccel -= rightOvershoot;}RslewOutput -=deccel;}else if(RslewOutput > -driveMax){RslewOutput -=revAccel;}}
-  	printf("left, LOutput, leftError  %F %F %F \n", rightJoystick, LslewOutput, RslewOutput);
+leftError = leftJoystick*94.488 - LslewOutput; //1.58
+leftOvershoot = deccel - abs(LslewOutput);
+if(abs(leftError) == 400)LslewOutput = 0;
+if(leftError > 0){if(leftJoystick == 0){ if(leftOvershoot >0){deccel -= leftOvershoot;}LslewOutput +=deccel;}else if(LslewOutput < driveMax){LslewOutput +=fwdAccel;}}
+if(leftError < 0){if(leftJoystick == 0){ if(leftOvershoot >0){deccel -= leftOvershoot;}LslewOutput -=deccel;}else if(LslewOutput > -driveMax){LslewOutput -=revAccel;}}
+rightError = rightJoystick*94.488 - RslewOutput;
+rightOvershoot = deccel - abs(RslewOutput);
+if(abs(rightError) == 400) RslewOutput = 0;
+if(rightError > 0){if(rightJoystick == 0){ if(rightOvershoot >0){deccel -= rightOvershoot;}RslewOutput +=deccel;}else if(RslewOutput < driveMax){RslewOutput +=fwdAccel;}}
+if(rightError < 0){if(rightJoystick == 0){ if(rightOvershoot >0){deccel -= rightOvershoot;}RslewOutput -=deccel;}else if(RslewOutput > -driveMax){RslewOutput -=revAccel;}}
+printf("left, LOutput, leftError  %F %F %F \n", rightJoystick, LslewOutput, RslewOutput);
 
-  	if(RslewOutput > 12000)RslewOutput =12000;
-  	if(LslewOutput > 12000)LslewOutput =12000;
+if(RslewOutput > 12000)RslewOutput =12000;
+if(LslewOutput > 12000)LslewOutput =12000;
 
-  	if(LslewOutput == 0) LF.set_brake_mode(MOTOR_BRAKE_COAST); LB.set_brake_mode(MOTOR_BRAKE_COAST);
-  	if(RslewOutput == 0) RF.set_brake_mode(MOTOR_BRAKE_COAST); RB.set_brake_mode(MOTOR_BRAKE_COAST);
-  	LF.move_voltage(LslewOutput);
-  	LB.move_voltage(LslewOutput);
-  	RF.move_voltage(-RslewOutput);
-  	RB.move_voltage(-RslewOutput);
+if(LslewOutput == 0) LF.set_brake_mode(MOTOR_BRAKE_COAST); LB.set_brake_mode(MOTOR_BRAKE_COAST);
+if(RslewOutput == 0) RF.set_brake_mode(MOTOR_BRAKE_COAST); RB.set_brake_mode(MOTOR_BRAKE_COAST);
+LF.move_voltage(LslewOutput);
+LB.move_voltage(LslewOutput);
+RF.move_voltage(-RslewOutput);
+RB.move_voltage(-RslewOutput);
 
-  	driveMax = 12000;
+driveMax = 12000;
 
-  	return 0;
-	}
+return 0;
 ```
 
 ## 8/18/20
 We began working on the Intake::autoSort() member function. The robot is now able to identify the opposing alliance’s ball color and will shoot it out the back of the robot. It knows what color is the opposing color by having the use input which alliance they are on and then the robot uses that information to know which color to look for. The robot autosorts by running two member functions of the intake class. First it runs autoSort() then the bulk of the autosorting is done by Intake::calculateSort(int opposingColor). The autosort member function is a switch statement that takes the global variable int Alliance which stores whether we are on the Red or Blue alliance and based on its value will pass a different value into the calculateSort member function. Then the calculateSort function actually takes a snapshot with the vision sensor and checks it for the opposingColor and if found it will run the intakes to send the ball into the back of the robot. 
 
 ```{code}
-	void Intake::calculateSort(int opposingColor){
-  	while (true) {
+void Intake::calculateSort(int opposingColor){
+ 	while (true) {
     	 pros::vision_object_s_t latestsnapshot = vis.get_by_sig(0, opposingColor);
     	 std::cout << "sig:" << latestsnapshot.signature << std::endl; //debug
     	 if(latestsnapshot.signature != 0){/*do mvmt to send out back*/}
     	 pros::delay(2);
   	}
-	}	
+}	
 
-	Intake& Intake::autoSort(){
+Intake& Intake::autoSort(){
   	switch (alliance){
-    	 case 1:{ calculateSort(REDBALL); break;/*Red Alliance*/}
-    	 case 2:{ calculateSort(BLUEBALL); break;/*Blue Alliance*/}
+    	case 1:{ calculateSort(REDBALL); break;/*Red Alliance*/}
+    	case 2:{ calculateSort(BLUEBALL); break;/*Blue Alliance*/}
   	}
-  	return *this;
-	}
+return *this;
+}
 ```
 
 ## 8/25/20

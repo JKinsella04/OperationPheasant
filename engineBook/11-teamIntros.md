@@ -1,6 +1,6 @@
 # Team Intros
 <!-- We need a team photo and photos of each person. -->
-This year our team is composed of 5 people, Brody, Derek, Dylan, Ian, and Jack. 
+This year our team is composed of 5 students, Brody, Derek, Dylan, Ian, and Jack. 
 - Brody 
 -- This is his third year doing VEX Robotics and his third year with us. He is the lead strategist, is a drive team member, and lead Scout. 
 - Derek
