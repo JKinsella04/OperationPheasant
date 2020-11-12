@@ -23,19 +23,83 @@ Design, build, test, and compete with a Robot capable of efficiently *scoring Ba
 - Rollers; must be able to shoot the *Balls* into the *Goal* on first try and quickly.
 
 ## Drive Base Designs
+
 ### Holonomic/X-Drive
+- The wheels are angled for movement but motors could block balls.
+- This drive base is very fast but lacks stability.
+- Strafing is very fluid.
+
+<img src="././_images/beginning/x-drive.png" alt="x-drive.png" width="300px;"/>
+
 ### Mecanum Drive
+- Manuverability is similar to an X-Drive but more traction.
+- Strong base and has fluid strafing.
+
+<img src="././_images/beginning/mecanumDriveBase.png" alt="mecanumDriveBase.png" width="300px;"/>
+
 ### Omni Wheel Drive
-### Omni and Traction Wheel Drive
+- Fast with good traction.
+- Can easily be pushed from the side
+
+<img src="././_images/beginning/omniDriveBase.png" alt="omniDriveBase.png" width="300px;"/>
+
+### Speed Transmission
+- With the help of pneumatics (not shown in photo) it can change it's gear ratio to either give itself more torque or speed.
+- Can be pushed from the side.
+- Takes up a lot of space.
+
+<img src="././_images/beginning/speedTrans.png" alt="speedTrans.png" width="300px;"/>
+
 ## Lifts and Trays
+
 ### Simple Tray
+- Can hold 3 *Balls*.
+- Simple design.
+- Takes time to *score Balls* since it has to lift up.
+
+<img src="././_images/beginning/darknights_render.png" alt="darknights_render.png" width="300px;"/>
+
 ### Complex Tray
+- Can hold 6 *Balls*
+- Design is more complex since it needs to fold into itself to fit in size.
+- Takes time to *score Balls* since it has to lift up.
+
+<img src="././_images/4-April/4-29-20/traybotWithBalls.png" alt="traybotWithBalls.png" width="300px;"/>
+
 ### Four bar (4bar)
+- Lightweight and simple design.
+- Have a semi high extension.
+
+<!-- <img src="././_images/beginning/4bar.png" alt="4bar.png" width="300px;"/> -->
+<!-- <img src="././_images/beginning/4bar_up.png" alt="4bar_up.png" width="300px;"/> -->
+
 ### Double Reverse Four Bar (DR4B)
-### Six bar
+- Less stability but double the speed and height of a 4bar.
+- Complex design.
+
+<img src="././_images/beginning/DR4B.png" alt="DR4B.png" width="300px;"/>
+<img src="././_images/beginning/DR4Bup.png" alt="DR4Bup.png" width="300px;"/>
+
+### Six bar (6bar)
+- Higher extension and weight than a 4bar.
+- Stable and simple design.
+
+<img src="././_images/beginning/6_bar_lift.png" alt="6_bar_lift.png" width="300px;"/>
+<img src="././_images/beginning/6bar_up.png" alt="6bar_up.png" width="300px;"/>
+
 ## Intake Designs
+
 ### Flaps
+- flaps can bend, not allowing enough traction to pick up *Balls*.
+- Design can be very compact.
+
+<img src="././_images/4-April/4-29-20/intakesSideMount.png" alt="intakesSideMount.png" width="300px;"/>
+
 ### Wheel Intake
+- Must be 6.3" apart because the wheels don't bend.
+- have alot of traction and are compact
+
+<img src="././_images/beginning/wheelIntake.jpg" alt="wheelIntake.jpg" width="300px;"/>
 
 ## Lift/Tray Design Matrix
 | Design       | Stability | Extension | Speed | Complexity | Total |

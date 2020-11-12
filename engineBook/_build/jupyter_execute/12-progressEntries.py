@@ -223,7 +223,7 @@ We completed building the middle intakes and indexer system today. There were no
 
 ### Middle Intakes and Indexer
 <img src="././_images/7-July/7-26-20/towerFrontView.JPG" alt="towerFrontView.JPG" style="width: 200px;"/>
-<img src="././_images/7-July/7-26-20/towerLeftSideView.JPG" alt="towerLeftSideView.JPG" style="width: 200px; -webkit-transform: rotate(270deg);"/>
+<img src="././_images/7-July/7-26-20/towerLeftSideView.JPG" alt="towerLeftSideView.JPG" style="width: 150px; -webkit-transform: rotate(270deg);"/>
 <img src="././_images/7-July/7-26-20/towerRightSideView.JPG" alt="towerRightSideView.JPG" style="width: 200px;"/>
 <img src="././_images/7-July/7-26-20/towerTopView.JPG" alt="towerTopView.JPG" style="width: 200px;"/>
 
