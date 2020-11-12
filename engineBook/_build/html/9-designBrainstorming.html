@@ -1,0 +1,641 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Up Design Brainstorming &#8212; 9447H - Engineering Notebook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/spanels-index--0afa1ebdab0bb23b98b56d34c23d9f57.css" />
+    <link rel="stylesheet" type="text/css" href="_static/spanels-variables--ffc7f74dcb1b9eecba2dbcbc22818714.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="V5 Motor Specifications" href="10-motorSpecs.html" />
+    <link rel="prev" title="9447H Team Standards" href="8-teamStandards.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/v1logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">9447H - Engineering Notebook</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome Page
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1-gameDescription.html">
+   Change Up Game Description
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2-gameObjects%26Elements.html">
+   Change Up Game Objects and Elements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-fieldOverview.html">
+   Change Up Field Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4-scoringDetails.html">
+   Change Up Scoring Details
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5-terminology.html">
+   Change Up Terminology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6-gameRules.html">
+   Change Up Game Rules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7-initialGoals.html">
+   Initial Goals For Change Up
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8-teamStandards.html">
+   9447H Team Standards
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Change Up Design Brainstorming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-motorSpecs.html">
+   V5 Motor Specifications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-teamIntros.html">
+   Team Intros
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-progressEntries.html">
+   Progress Entries
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/9-designBrainstorming.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-statememt">
+   Problem Statememt
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#design-statement">
+   Design Statement
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#constraints">
+   Constraints
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#robot-criteria">
+   Robot Criteria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#robot-componets">
+   Robot Componets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#drive-base-designs">
+   Drive Base Designs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#holonomic-x-drive">
+     Holonomic/X-Drive
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mecanum-drive">
+     Mecanum Drive
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#omni-wheel-drive">
+     Omni Wheel Drive
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#omni-and-traction-wheel-drive">
+     Omni and Traction Wheel Drive
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lifts-and-trays">
+   Lifts and Trays
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simple-tray">
+     Simple Tray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complex-tray">
+     Complex Tray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#four-bar-4bar">
+     Four bar (4bar)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#double-reverse-four-bar-dr4b">
+     Double Reverse Four Bar (DR4B)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#six-bar">
+     Six bar
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intake-designs">
+   Intake Designs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#flaps">
+     Flaps
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wheel-intake">
+     Wheel Intake
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lift-tray-design-matrix">
+   Lift/Tray Design Matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#robot-archetypes-matrix">
+   Robot Archetypes Matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intake-design-matrix">
+   Intake Design Matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#drive-base-matrix">
+   Drive Base Matrix
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="change-up-design-brainstorming">
+<h1>Change Up Design Brainstorming<a class="headerlink" href="#change-up-design-brainstorming" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="problem-statememt">
+<h2>Problem Statememt<a class="headerlink" href="#problem-statememt" title="Permalink to this headline">¶</a></h2>
+<p>The challenge of Change Up is to <em>score</em> Balls and <em>connect rows</em> to score more points than the opposing Alliance at the end of the match.</p>
+</div>
+<div class="section" id="design-statement">
+<h2>Design Statement<a class="headerlink" href="#design-statement" title="Permalink to this headline">¶</a></h2>
+<p>Design, build, test, and compete with a Robot capable of efficiently <em>scoring Balls</em> and <em>connecting rows</em> in Change Up.</p>
+</div>
+<div class="section" id="constraints">
+<h2>Constraints<a class="headerlink" href="#constraints" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The Robot must not exceed 18” by 18” by 18” before the match starts</p></li>
+<li><p>The Robot must be completed by 9/X/20.</p></li>
+<li><p>There is a limit of eight (8) V5 motors per Robot.</p></li>
+<li><p>We will need multiple Autonomous Programs since the Autonomous of our Alliance partner will be difficult to predict.</p></li>
+</ul>
+</div>
+<div class="section" id="robot-criteria">
+<h2>Robot Criteria<a class="headerlink" href="#robot-criteria" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Must be capable of <em>scoring Balls</em> and <em>connecting rows</em>.</p></li>
+<li><p>Must be capable of holding multiple <em>Balls</em> at once.</p></li>
+</ul>
+</div>
+<div class="section" id="robot-componets">
+<h2>Robot Componets<a class="headerlink" href="#robot-componets" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Drive Base; must be fast and resistant to pushing</p></li>
+<li><p>Lift or Snail Design; must be fast, capable of <em>scoring</em> and <em>descoring</em> in all <em>Goals</em>.</p></li>
+<li><p>Intakes; must be able to grab <em>Balls</em> in any position i.e. versatile.</p></li>
+<li><p>Rollers; must be able to shoot the <em>Balls</em> into the <em>Goal</em> on first try and quickly.</p></li>
+</ul>
+</div>
+<div class="section" id="drive-base-designs">
+<h2>Drive Base Designs<a class="headerlink" href="#drive-base-designs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="holonomic-x-drive">
+<h3>Holonomic/X-Drive<a class="headerlink" href="#holonomic-x-drive" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="mecanum-drive">
+<h3>Mecanum Drive<a class="headerlink" href="#mecanum-drive" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="omni-wheel-drive">
+<h3>Omni Wheel Drive<a class="headerlink" href="#omni-wheel-drive" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="omni-and-traction-wheel-drive">
+<h3>Omni and Traction Wheel Drive<a class="headerlink" href="#omni-and-traction-wheel-drive" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="lifts-and-trays">
+<h2>Lifts and Trays<a class="headerlink" href="#lifts-and-trays" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="simple-tray">
+<h3>Simple Tray<a class="headerlink" href="#simple-tray" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="complex-tray">
+<h3>Complex Tray<a class="headerlink" href="#complex-tray" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="four-bar-4bar">
+<h3>Four bar (4bar)<a class="headerlink" href="#four-bar-4bar" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="double-reverse-four-bar-dr4b">
+<h3>Double Reverse Four Bar (DR4B)<a class="headerlink" href="#double-reverse-four-bar-dr4b" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="six-bar">
+<h3>Six bar<a class="headerlink" href="#six-bar" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="intake-designs">
+<h2>Intake Designs<a class="headerlink" href="#intake-designs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="flaps">
+<h3>Flaps<a class="headerlink" href="#flaps" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="wheel-intake">
+<h3>Wheel Intake<a class="headerlink" href="#wheel-intake" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="lift-tray-design-matrix">
+<h2>Lift/Tray Design Matrix<a class="headerlink" href="#lift-tray-design-matrix" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Stability</p></th>
+<th class="head"><p>Extension</p></th>
+<th class="head"><p>Speed</p></th>
+<th class="head"><p>Complexity</p></th>
+<th class="head"><p>Total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Simple Tray</p></td>
+<td><p>1</p></td>
+<td><p>N/A</p></td>
+<td><p>4</p></td>
+<td><p>2</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>Complex Tray</p></td>
+<td><p>1</p></td>
+<td><p>N/A</p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>6 Bar</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>4 Bar</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+<td><p>11</p></td>
+</tr>
+<tr class="row-even"><td><p>DR4B</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>12</p></td>
+</tr>
+</tbody>
+</table>
+<p>Based on our design matrix for Lifts/Trays, the DR4B scored the highest however, we decided to do a 6 Bar as an early season bot beacuse it scored only 3 less and this competition it will fit easier in size than a DR4B will.</p>
+</div>
+<div class="section" id="robot-archetypes-matrix">
+<h2>Robot Archetypes Matrix<a class="headerlink" href="#robot-archetypes-matrix" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Ball Capacity</p></th>
+<th class="head"><p>Complexity</p></th>
+<th class="head"><p>Versatility</p></th>
+<th class="head"><p>Total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Tray Bot</p></td>
+<td><p>6</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Snail Bot</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>5</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-even"><td><p>Tiny Boi</p></td>
+<td><p>2</p></td>
+<td><p>5</p></td>
+<td><p>0</p></td>
+<td><p>7</p></td>
+</tr>
+</tbody>
+</table>
+<p>Based on our design matrix for Robot Archetypes, the Tray Bot scored the highest. We will go with this design because we believe that it will be a very successful design.</p>
+</div>
+<div class="section" id="intake-design-matrix">
+<h2>Intake Design Matrix<a class="headerlink" href="#intake-design-matrix" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Complexity</p></th>
+<th class="head"><p>Traction</p></th>
+<th class="head"><p>Total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Flaps</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Wheels</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>3</p></td>
+</tr>
+</tbody>
+</table>
+<p>Based on our design matrix, the two types of intakes tied. We decided to first attempt a flap style intake as it will be able to enter the <em>Goals</em> easier than a wheel intake would.</p>
+</div>
+<div class="section" id="drive-base-matrix">
+<h2>Drive Base Matrix<a class="headerlink" href="#drive-base-matrix" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Traction</p></th>
+<th class="head"><p>Strafing</p></th>
+<th class="head"><p>Stability</p></th>
+<th class="head"><p>Complexity</p></th>
+<th class="head"><p>Speed</p></th>
+<th class="head"><p>Resistance to Pushing</p></th>
+<th class="head"><p>Total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mecanum</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>Omni</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>Omni + Traction</p></td>
+<td><p>3</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>X-drive</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>6</p></td>
+</tr>
+</tbody>
+</table>
+<p>Based on our design matrix, omni wheels are the best overall, but the ability to strafe would be very valuable during Autonomous for this reason we have decided to use a mecanum drive base.</p>
+<blockquote>
+<div><p>For the design marticies, higher values are better. Simple designs score higher on the complexity category for this reason.</p>
+</div></blockquote>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="8-teamStandards.html" title="previous page">9447H Team Standards</a>
+    <a class='right-next' id="next-link" href="10-motorSpecs.html" title="next page">V5 Motor Specifications</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 9447H<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>

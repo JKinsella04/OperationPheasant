@@ -1,7 +1,7 @@
 # Book settings
-title: My sample book
-author: The Jupyter Book Community
-logo: imgstart.png
+title: 9447H - Engineering Notebook
+author: 9447H
+logo: images/beginning/v1logo.png
 
 latex:
   latex_documents:

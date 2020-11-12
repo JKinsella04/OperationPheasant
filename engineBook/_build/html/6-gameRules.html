@@ -1,0 +1,421 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Up Game Rules &#8212; 9447H - Engineering Notebook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/spanels-index--0afa1ebdab0bb23b98b56d34c23d9f57.css" />
+    <link rel="stylesheet" type="text/css" href="_static/spanels-variables--ffc7f74dcb1b9eecba2dbcbc22818714.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Initial Goals For Change Up" href="7-initialGoals.html" />
+    <link rel="prev" title="Change Up Terminology" href="5-terminology.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/v1logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">9447H - Engineering Notebook</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome Page
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1-gameDescription.html">
+   Change Up Game Description
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2-gameObjects%26Elements.html">
+   Change Up Game Objects and Elements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-fieldOverview.html">
+   Change Up Field Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4-scoringDetails.html">
+   Change Up Scoring Details
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5-terminology.html">
+   Change Up Terminology
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Change Up Game Rules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7-initialGoals.html">
+   Initial Goals For Change Up
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8-teamStandards.html">
+   9447H Team Standards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9-designBrainstorming.html">
+   Change Up Design Brainstorming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-motorSpecs.html">
+   V5 Motor Specifications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-teamIntros.html">
+   Team Intros
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-progressEntries.html">
+   Progress Entries
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/6-gameRules.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg1">
+   SG1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg2">
+   SG2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg3">
+   SG3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg4">
+   SG4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg5">
+   SG5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg6">
+   SG6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg7">
+   SG7
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg8">
+   SG8
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="change-up-game-rules">
+<h1>Change Up Game Rules<a class="headerlink" href="#change-up-game-rules" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sg1">
+<h2>SG1<a class="headerlink" href="#sg1" title="Permalink to this headline">¶</a></h2>
+<p>Starting a Match. Prior to the start of each Match, the Robot must be placed such that it is:</p>
+<ol class="simple">
+<li><p>Contacting its Home Zone.</p></li>
+<li><p>Not contacting the gray foam field tiles outside of the Alliance’s Home Zone.</p></li>
+<li><p>Not contacting any Balls other than the Preload.</p></li>
+<li><p>Not contacting another Robot.</p></li>
+<li><p>Contacting exactly one (1) Preload.</p></li>
+<li><p>The Preload must be contacting exactly one (1) Robot.</p>
+<ul class="simple">
+<li><p>The Preload must be fully within the field perimeter.</p></li>
+<li><p>The Preload must not be breaking the vertical projection of the Goal, i.e. the Preload must not be inside or above the Goal.</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="sg2">
+<h2>SG2<a class="headerlink" href="#sg2" title="Permalink to this headline">¶</a></h2>
+<p>Stay on your side in Autonomous. During the Autonomous Period, Robots may not contact the
+foam tiles or Balls which are on the opposing Alliance’s side of the Autonomous Line. Robots may not
+contact the Goals that are in the opposing Alliance’s Home Zone.
+Violations of this rule will result in the Autonomous Bonus being awarded to the opposing Alliance.
+Intentional, strategic, or egregious violations, such as intentional contact with an opposing Robot while
+completely across the Autonomous Line, will result in a Disqualification.</p>
+<ul class="simple">
+<li><p>The three (3) Goals contacting the Autonomous Line are not considered to be on either side,
+and may be utilized by either Alliance during the Autonomous Period. If attempting to utilize these
+Goals, Teams should be cognizant of the possibility that opponent Robots may attempt to do the same.</p></li>
+</ul>
+</div>
+<div class="section" id="sg3">
+<h2>SG3<a class="headerlink" href="#sg3" title="Permalink to this headline">¶</a></h2>
+<p>Keep Balls on your side in Autonomous. Balls that start fully on one side of the Autonomous
+Line may not contact the foam tiles on the opposite side of the Autonomous Line during the Autonomous Period.
+Incidental violations of this rule and have no impact on the opposing Alliance will result in a Warning.
+Violations of this rule that affect the opposing Alliance’s autonomous routine will result in the Autonomous Bonus being awarded to the opposing Alliance. Examples of affecting the opposing Alliance could
+include, but are not limited to, a Ball moving another Ball or getting in the path of a Robot.</p>
+<ul class="simple">
+<li><p>Balls that start on the Autonomous Line are not included in this rule.</p></li>
+</ul>
+</div>
+<div class="section" id="sg4">
+<h2>SG4<a class="headerlink" href="#sg4" title="Permalink to this headline">¶</a></h2>
+<p>Keep Game Objects to yourself. Robots may not intentionally drop or place Game Objects on
+an opponent Robot.
+Minor violations of this rule that do not affect the Match will result in a warning. Match Affecting
+offenses will result in a Disqualification. Teams that receive multiple warnings may also receive a Disqualification at the Head Referee’s discretion.</p>
+</div>
+<div class="section" id="sg5">
+<h2>SG5<a class="headerlink" href="#sg5" title="Permalink to this headline">¶</a></h2>
+<p>Balls may not be de-scored from the top of Goals. Balls that are Scored may not be lifted by
+any means such that the Ball goes above the top edge of the Goal.
+It is expected that while removing Balls from the bottom of the Goal, this may cause the top Ball to
+momentarily go above the top edge of the Goal. This would not be a violation of this rule and is considered to be normal game play.
+If the Match ends while a Robot is removing a Ball from the bottom of the Goal that contains three
+(3) Balls and the top Ball remains partially above the top edge of the Goal, that Ball will be considered
+Scored and no penalty to the Team will be assessed.
+Minor violations of this rule that do not affect the Match will result in a warning. Match Affecting
+offenses will result in a Disqualification. Teams that receive multiple warnings may also receive a Disqualification at the Head Referee’s discretion.</p>
+</div>
+<div class="section" id="sg6">
+<h2>SG6<a class="headerlink" href="#sg6" title="Permalink to this headline">¶</a></h2>
+<p>Keep Balls in the field. Teams may not intentionally remove Balls from the field. While Balls
+may accidentally leave the field when attempting to Score, doing so intentionally or repeatedly would
+be a violation of this rule. Balls that leave the field during Match play, intentionally or unintentionally,
+will be returned to the field at the location nearest the point at which they exited. Referees will return
+the Balls to the field when it is deemed safe to do so, at the leisure of the referee.
+Minor violations of this rule that do not affect the Match will result in a warning. Match Affecting
+offenses will result in a Disqualification. Teams that receive multiple warnings may also receive a
+Disqualification at the Head Referee’s discretion.</p>
+</div>
+<div class="section" id="sg7">
+<h2>SG7<a class="headerlink" href="#sg7" title="Permalink to this headline">¶</a></h2>
+<p>Use Balls to play the game. Balls may not be used to accomplish actions that would be
+otherwise illegal if they were attempted by Robot mechanisms (e.g., Interfering with an opponent’s
+Autonomous Period per <em><strong>SG2</strong></em>.)</p>
+<blockquote>
+<div><p>The intent of this rule is to prohibit teams from using game objects as “gloves” to loophole any rule that
+states “a Robot may not [do some action]”. This rule is not intended to be taken in its most extreme
+literal interpretation, where any interaction between a Ball and a Robot needs to be scrutinized with the
+same intensity as if it were a Robot.</p>
+</div></blockquote>
+</div>
+<div class="section" id="sg8">
+<h2>SG8<a class="headerlink" href="#sg8" title="Permalink to this headline">¶</a></h2>
+<p>Possession is limited. Robots may not have greater-than-momentary Possession of more than
+three (3) Balls of its opposing Alliance’s color at once. When two Robots from the same Alliance are
+working in tandem and blocking Balls, those Robots may not possess a total of more than six (6) Balls
+of its opposing Alliance’s color at once.
+Robots that violate this rule must stop all Robot actions except for those actions that are attempting to
+remove the excess Ball.
+Minor violations of this rule that are not Match Affecting will receive a warning. Match Affecting
+offenses will result in a Disqualification. Teams that receive multiple warnings may also receive a
+Disqualification at the Head Referee’s discretion.</p>
+<blockquote>
+<div><p>The overarching intent of this rule is to prohibit each Robot from keeping more than 3 of the opposing
+Balls from being used by the opposing Alliance.
+One definition of Possession is “blocking opposing Robots’ access to Balls, such as by expanding horizontally and restricting access to a portion of the field (e.g. a ”wallbot”).” Put simply - as far as Possession is concerned, a defensive “wallbot” does not violate <em><strong>SG8</strong></em>, as long as 3 or more of the offensive
+Alliance’s Balls are not being blocked.
+Similarly, if two Robots work in tandem to prevent access to an opposing Alliance’s Balls, they are not
+in violation of <em><strong>SG8</strong></em> as long as they are not blocking access to more than 6 of the opposing Alliance’s
+Balls in total, and each Robot is not carrying or controlling more than 3 Balls each.</p>
+</div></blockquote>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="5-terminology.html" title="previous page">Change Up Terminology</a>
+    <a class='right-next' id="next-link" href="7-initialGoals.html" title="next page">Initial Goals For Change Up</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 9447H<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>

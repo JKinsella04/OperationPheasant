@@ -1,4 +1,14 @@
 - file: intro
-- file: beginning
-- file: dailyEntries
-  
+- file: 1-gameDescription
+- file: 2-gameObjects&Elements
+- file: 3-fieldOverview
+- file: 4-scoringDetails
+- file: 5-terminology
+- file: 6-gameRules
+- file: 7-initialGoals
+- file: 8-teamStandards
+- file: 9-designBrainstorming
+- file: 10-motorSpecs
+- file: 11-teamIntros
+- file: 12-progressEntries
+
