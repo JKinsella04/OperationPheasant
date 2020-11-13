@@ -2,7 +2,6 @@
 ## 4/27/20
 ### Attendance: &#9744; Brody, &#9745; Derek, &#9744; Dylan, &#9744; Ian, &#9744; Jack
 
-
 Today we started generating ideas for change up. We created design matrices to compare many different drive bases and robot designs. We decided to continue developing 2 of the drive bases in CAD so we could work with them.
 We also started to come up with basic strategies for both skills and competition matches. These strategies helped make a decision on what type of robot we wanted
 Started to work on 2 different drives bases that we wanted to compare together. 
@@ -381,11 +380,59 @@ return *this;
 ## 9/8/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
 
+We created more member functions of the Intake class since we realized we needed more control over our intakes. We realized that we wanted to be able to control the intakes and each set of rollers separetely during the autonomous, so we had to create more member functions so we could actually control them since currently we could only control all of them in one member function.
+
+```cpp
+    /*
+    Sets intakes to 0 RPM.
+    */
+    void intakeStop();
+
+	/*
+    Spins indexer for the given amount of encoder counts in RPM.
+
+    @param ecount encoder counts
+    @param speed rpm
+    */
+    void indexerSpin(int ecount, int speed);
+
+    /*
+    Sets indexer to 0 RPM.
+    */
+    void indexerStop();
+
+    /*
+    Spins middle intake at given RPM.
+    @param speed RPM
+    */
+    void middleSpin(int speed);
+
+
+    /*
+    Spins middleIntake for the vien amount of encoder counts in RPM.
+    @param ecount encoder counts
+    @param speed rpm
+    */
+    void middleSpin(int ecount, int speed);
+
+    /*
+    Sets middleIntake to 0 RPM. 
+    */
+    void middleStop();
+
+    /*
+    Runs the intakes for driver control.
+    */
+    void runIntakes();
+```
+
 ## 9/15/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
 
 ## 9/22/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
+
+With the scrimmage only a few days away, We began practicing as much as we could with the restrictions we have with only being able to be at the school one day a week. That being said, we were able to get a 45 point autonomous up and below is a recording of it working. Unfortunately Derek was unable to practice driving since we took up the whole time programming the autonomous, but we will be able to go to the school early in the morning and spend plenty of time practicing before it is our turn to compete. To be able to run the skills run, we also created a new member function in the Auton class called runSkills();. As well the GUI has a third option in the dropdown that allows the user to choose `skills`. We plan on keeping this feature as well, since it will be useful for all competition where we want to run our autonomous skills run.
 
 ### 45 Point Auton
 
@@ -398,14 +445,62 @@ return *this;
 ## 9/29/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
 
+The scrimmage results are finally in, unfortunately we did not do as well as we hoped but we did learn a lot and we now have a clear plan for what improvements we want to make to our robot and code to make us do better for our first real tournament which is on November 21.
+
+### List of Improvements
+- 1 button auto sorting and auto sorting when cylcing goals.
+- Improve intakes to intake balls easier.
+- Re-build hood to make the balls always make it into the goal.
+- Spend more time practicing both Auton and Driving.
+> All of these goals will be achieved by November 21st.
+
+<img src="././_images/9-September/9-29-20/firstComp.jpg" alt="firstComp.jpg" style="width: 300px;"/>
+
 ## 10/6/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
+### Intake Changes
+- Static intakes (dont fold out)
+- Geared intakes instead of connected by track
+- A mechanism to push the goal up a bit to help the ball leave the goal
+
+Today we solely focused on improving our intakes. We began by redoing the core design of them and building something similar to the design we had in Tower Takeover. This new design is better because it encompases all of the criteria above which were all pitfalls of the last design. 
+
+### New Intakes
+<img src="././_images/10-October/10-6-20/intakesFrontView.jpg" alt="intakesFrontView.jpg" style="width: 200px;"/>
+<img src="././_images/10-October/10-6-20/intakesSideView.jpg" alt="intakesSideView.jpg" style="width: 200px;"/>
+<img src="././_images/10-October/10-6-20/intakesWithBall.jpg" alt="intakesWithBall.jpg" style="width: 200px;"/>
+<img src="././_images/10-October/10-6-20/goalLifter.jpg" alt="goalLifter.jpg" style="width: 200px;"/>
 
 ## 10/13/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
+### Problems with scoring
+
+#### Description
+- The ball indexed at the top of the robot has trouble scoring itself because it doesn’t have enough speed.
+
+#### Attempt to fix it 
+We tried increasing gear ratio to 2:1 to make the ball faster. While increasing it to have more speed, the ball was not able to move at all.To help this, we are going from a 2:1 to a 1:2 gear ratio. While making the gear ratio 1:2, it was the worst out of the three. Our next approach was changing the curve of our hood. We tried having the hood bend upward at the end of it which turned out to fix the problem we were having. TWhile this hood does do a good job at scoring the balls, it does have a hard time supporting itself and also starting in the size requirements. Next week we are going to redesign the hood so it meets all of these requirements.
+
+<img src="././_images/10-October/10-13-20/hoodSCurve.jpg" alt="hoodSCurve.jpg" style="width: 200px;"/>
 
 ## 10/20/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
+
+### Hood Changes
+- Near flat piece of polycarbonate.
+- Easy and consistent starting postition.
+- Secure position for the top line sensor.
+
+Today we solely focused on improving our hood. We began by redoing the way it connected to the robot as the old design was weak and in the way. The new design has the hood connect to the two c-channels that create the back tower of our robot. Since we mounted it this way, it also able to fit inside the top roller for an easy and consistent starting position. Our new hood is almost completely flat. To help with keeping constant pressure on the ball, we put 1.5" spacers at the end of it to give it just enough of an arc that would give the ball just the right amount of pressure.
+
+### New Hood
+
+%%HTML
+<div align="middle">
+<video width="80%" controls>
+      <source src="././_images/10-October/10-20-20/hoodUnfolding.mp4" type="video/mp4">
+</video></div>
+
 
 ## 10/27/20
 ### Autosort Function
@@ -458,9 +553,79 @@ For Driving Skills, Our goal is to get at least 100 points and then begin trying
 
 ## 11/3/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
+### Goals for today
+- Begin practicing! 
+
+### What we did today
+- Noticed a problem with scoring balls into goal, a lot of speed loss, indexer meets polycarbonate hood. wanted to combat this by pulling back the hood. Rebanded robot. 
+- Our first real tournament is coming up really soon. It is on the 21st and is a saturday. Unfortunately only three members are allowed to go so we had to decide who 3 were going. Due to Dylan and Ian already having plans for that weekend, we didn’t have too much of a problem deciding since only Brody, Derek and Jack are able to go anyways.
+
+
+### Auto Sort Function
+Last thursday (10/29/20) PROS pushed a new kernel update that supported the optical and distance sensors so we were able to port over our code we created in VEXcode to our actual program. When we ported it over, we also increased the speed at which the intakes and rollers run so it is much faster now. We also created a new function for sorting when we are interacting with the goals. The code is a simplified version of the normal auto sorting but with a few differences. The main one is that it no longer checks to see if it found the right color, it only checks for the enemy color. Upon finding the enemy color it will reverse the top indexer to send the enemy ball out the back of the robot. Another change to it is that instead of stopping the ball at the top line sensor, it spins is all rollers to score the balls in the goals. The way this works is that it will be scoring all the balls and upon finding the enemy color it will eject that out the back of the robot and then immediately continue scoring.
+
+### Goals for next week’s Practice
+- Make sure the robot is in size requirements with the hood deployment.
+- Fine tune auto sorting
+- Begin Practicing!
+
+```cpp
+void Intake::goalSort(int allianceColor){ //The sorting code when we are cycling balls at a Goal.
+  switch (allianceColor){
+    case REDBALL:{
+      LOptical.set_led_pwm(ledLevel);
+      ROptical.set_led_pwm(ledLevel);
+      intakeSpin(200);
+      indexerSpin(600);
+      middleSpin(600);
+      double currentHue = (LOptical.get_hue() + ROptical.get_hue())/2;
+      printf("currentHue %F\n", currentHue); //debug code
+      if(currentHue >= blueHue){indexerSpin(-600);pros::delay(250);} //If there is a blue ball it will send it out back.
+      break;
+    }
+    case BLUEBALL:{
+      LOptical.set_led_pwm(ledLevel);
+      ROptical.set_led_pwm(ledLevel);
+      intakeSpin(200);
+      indexerSpin(600);
+      middleSpin(600);
+      double currentHue = (LOptical.get_hue() + ROptical.get_hue())/2;
+      printf("currentHue %F\n", currentHue); //debug code
+      if(currentHue <= redHue){indexerSpin(-600);pros::delay(250);} //If there is a red ball it will send it out back.
+      break;
+    }
+  }
+}
+```
+
 
 ## 11/10/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9744; Dylan, &#9745; Ian, &#9745; Jack
+### Goals for today
+- Begin practicing! 
+
+### What we did today
+- Practice!
+- Minor tweaks to slew and autosort code.
+
+### Auto Sort Fine tuning
+With the auto sorting, we had a problem with the ball going past the top line sensor. We had been trying to fix it by lowering the speed of the top indexer but this just made the problem worse. The actual problem wasn’t the timeframe to sense the ball but actually the speed difference between the top and middle rollers. Since the middle ones were faster than the top, it would cause a weird anomaly where the ball would idle for a little bit and move backwards and then when it would go up to the line sensor it would not be able to sense the ball. To fix this all we had to do was make both the middle and top rollers spin the same rpm. 
+We also had an issue with the enemy ball cycling all the way through in both the auto sorting and the goal sorting. To fix this we added a second optical sensor and lowered both of them to be right behind the back of the intakes. This now allows the balls to be read very early and more accurately since both sensors are very close to the balls when they enter. Even if a ball comes in a little astray to one side the second optical sensor will be able to still read the ball.
+
+### Practice Runs
+We spent the whole day practicing Driver Skills. Throughout the practice Derek was making constant improvements. This was a very successful day today since Derek got to begin practicing and with even more practice theres no doubt that we can get a max score of 126 points.
+|Run #| Points Scored|Run #| Points Scored|
+|-----|--------------|-----|--------------| 
+|1. |53 points|7. |83 points|
+|2. |77 points|8. |74 points|
+|3. |82 points|9. |81 points|
+|4. |59 points|10. |106 points|
+|5. |93 points|11. |109 points|
+|6. |81 points|12. |107 points|
+
+### Goals for next week’s Practice
+- Begin programming the autonomous routines. Focus on the 15 sec Home Row auton first then the 60 sec auton.
+- Continue Drive Practice.
 
 ## 11/14/20
 ### Attendance: &#9744; Brody, &#9744; Derek, &#9744; Dylan, &#9744; Ian, &#9744; Jack
