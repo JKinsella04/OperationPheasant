@@ -1306,12 +1306,16 @@ Added missing parts in some areas that were not symmetrical.</p>
 <h2>8/25/20<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id48">
 <h3>Attendance: ☑ Brody, ☑ Derek, ☑ Dylan, ☑ Ian, ☑ Jack<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h3>
+<p>Today we mapped new ideas for improving our GUI. We believe that once we start programming autonomous programs it will be a hassle to constantly download and restart the code. To fix this inconvenience we came up with a new GUI tab that would alter the variables of the drive function so we could perfect the kP, kD, and slew rate values with ease.</p>
+<img src="././_images/8-August/8-25-20/guiPlans.jpg" alt="guiPlans.jpg" style="width: 300px;"/>
 </div>
 </div>
 <div class="section" id="id49">
 <h2>9/1/20<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id50">
 <h3>Attendance: ☑ Brody, ☑ Derek, ☑ Dylan, ☑ Ian, ☑ Jack<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h3>
+<p>Today we spent the day ensuring the integrity of every part of the robot. We spent a whole day on this because it is very important that the robot does not have any screws missing or parts about to fall off. Through this integrity check we decided that the drive base was not secure enough and added a new brace going accross the drive base at the bottom. The brace is a 5 long c-channel. Other than this addition to the drive base, no other problems where identified during the integrity check</p>
+<img src="././_images/9-September/9-1-20/driveBaseBracing.jpg" alt="driveBaseBracing.jpg" style="width: 300px;"/>
 </div>
 </div>
 <div class="section" id="id51">
@@ -1368,6 +1372,19 @@ Added missing parts in some areas that were not symmetrical.</p>
 <h2>9/15/20<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id54">
 <h3>Attendance: ☑ Brody, ☑ Derek, ☑ Dylan, ☑ Ian, ☑ Jack<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h3>
+<p>Today we worked on finetuning our new intake functions. We now have the ability to input the precise rpm that we want the motors to spin at and the ability to control each motor independently of the others. Originally we had added a delay in every intake movement but this caused problems with slowing down everything since it kept on making the robot stop constantly. We now have it where the are no delays and they spin until they are told to stop. We also created more functions, so we can either enable the intakes to spin until stopped or to spin to a set rotation.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">Intake</span><span class="o">::</span><span class="n">intakeSpin</span><span class="p">(</span><span class="kt">int</span> <span class="n">speed</span><span class="p">){</span>
+  <span class="n">leftIntake</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">speed</span><span class="p">);</span>
+  <span class="n">rightIntake</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">speed</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">Intake</span><span class="o">::</span><span class="n">intakeSpin</span><span class="p">(</span><span class="kt">double</span> <span class="n">ecount</span><span class="p">,</span> <span class="kt">int</span> <span class="n">speed</span><span class="p">){</span>
+  <span class="n">leftIntake</span><span class="p">.</span><span class="n">move_relative</span><span class="p">(</span><span class="n">ecount</span><span class="p">,</span> <span class="n">speed</span><span class="p">);</span>
+  <span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+  <span class="n">rightIntake</span><span class="p">.</span><span class="n">move_relative</span><span class="p">(</span><span class="n">ecount</span><span class="p">,</span> <span class="n">speed</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="id55">
@@ -1705,7 +1722,7 @@ We also had an issue with the enemy ball cycling all the way through in both the
     <div class="container">
       <p>
         
-          By 9447H<br/>
+          By 9447H - Brody Muzzy, Derek Mullins, Dylan Quinn, Ian Smith, Jack Kinsella<br/>
         
             &copy; Copyright 2020.<br/>
       </p>

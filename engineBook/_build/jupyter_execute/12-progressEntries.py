@@ -373,9 +373,15 @@ return *this;
 
 ## 8/25/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
+Today we mapped new ideas for improving our GUI. We believe that once we start programming autonomous programs it will be a hassle to constantly download and restart the code. To fix this inconvenience we came up with a new GUI tab that would alter the variables of the drive function so we could perfect the kP, kD, and slew rate values with ease.
+
+<img src="././_images/8-August/8-25-20/guiPlans.jpg" alt="guiPlans.jpg" style="width: 300px;"/>
 
 ## 9/1/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
+Today we spent the day ensuring the integrity of every part of the robot. We spent a whole day on this because it is very important that the robot does not have any screws missing or parts about to fall off. Through this integrity check we decided that the drive base was not secure enough and added a new brace going accross the drive base at the bottom. The brace is a 5 long c-channel. Other than this addition to the drive base, no other problems where identified during the integrity check
+
+<img src="././_images/9-September/9-1-20/driveBaseBracing.jpg" alt="driveBaseBracing.jpg" style="width: 300px;"/>
 
 ## 9/8/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
@@ -428,6 +434,20 @@ We created more member functions of the Intake class since we realized we needed
 
 ## 9/15/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
+Today we worked on finetuning our new intake functions. We now have the ability to input the precise rpm that we want the motors to spin at and the ability to control each motor independently of the others. Originally we had added a delay in every intake movement but this caused problems with slowing down everything since it kept on making the robot stop constantly. We now have it where the are no delays and they spin until they are told to stop. We also created more functions, so we can either enable the intakes to spin until stopped or to spin to a set rotation. 
+
+```cpp
+void Intake::intakeSpin(int speed){
+  leftIntake.move(speed);
+  rightIntake.move(speed);
+}
+
+void Intake::intakeSpin(double ecount, int speed){
+  leftIntake.move_relative(ecount, speed);
+  pros::delay(50);
+  rightIntake.move_relative(ecount, speed);
+}
+```
 
 ## 9/22/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
@@ -501,7 +521,6 @@ Today we solely focused on improving our hood. We began by redoing the way it co
       <source src="././_images/10-October/10-20-20/hoodUnfolding.mp4" type="video/mp4">
 </video></div>
 
-
 ## 10/27/20
 ### Autosort Function
 Since we got VEX’s new optical sensor that can sense the color of objects, we decided that we wanted to use that instead of the vision sensor since the sensor is more compact and is more efficient at detecting color than the vision sensor. Since the sensor currently does not have support in PROS we began testing it in VEXCODE. Since we implemented the sensor we are able to now remove the bottom line sensor since now when we index balls we can use the optical sensor to stop the ball and the bottom line sensor is redundant. Since the optical sensor might not be supported in PROS by the time of our first competition on 11/21/20 we will probably not be using this feature and stick with normal auto indexing. But we will continue developing and perfect it so when it becomes supported we will be ready to implement it fully. Below is the current working autosort function.
@@ -545,11 +564,11 @@ void calculateSort(int goodBall){ //This function is run by autoSort() AutoSort 
 
 ### Finalizing the Robot for the 11/21 Competition
 We are very happy with the way our robot is right now, so we decided that today was our last editing day and that starting next tuesday we will begin practicing again in preparation for our competition. Our goals for this competition are to win Tournament Champion, Skills, and Excellence if possible. We are confident that if we practice enough that we will be more than able to do this with our current robot. 
+
 #### Practice Goals
 For Pre-auton, we want a program that will be able to fill our home row. We want this because if we can fill the home row in every match we will get a lot of extra Win Points which will help us rank high. 
 For Autonomous Skills, if time allows, we will improve upon our home row pre-auton by either trying to fill the rest of the goals or by filling only a couple rows but also removing the blue balls from them.
 For Driving Skills, Our goal is to get at least 100 points and then begin trying to get the max score by descoring all the blue balls too
-
 
 ## 11/3/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Dylan, &#9745; Ian, &#9745; Jack
@@ -559,7 +578,6 @@ For Driving Skills, Our goal is to get at least 100 points and then begin trying
 ### What we did today
 - Noticed a problem with scoring balls into goal, a lot of speed loss, indexer meets polycarbonate hood. wanted to combat this by pulling back the hood. Rebanded robot. 
 - Our first real tournament is coming up really soon. It is on the 21st and is a saturday. Unfortunately only three members are allowed to go so we had to decide who 3 were going. Due to Dylan and Ian already having plans for that weekend, we didn’t have too much of a problem deciding since only Brody, Derek and Jack are able to go anyways.
-
 
 ### Auto Sort Function
 Last thursday (10/29/20) PROS pushed a new kernel update that supported the optical and distance sensors so we were able to port over our code we created in VEXcode to our actual program. When we ported it over, we also increased the speed at which the intakes and rollers run so it is much faster now. We also created a new function for sorting when we are interacting with the goals. The code is a simplified version of the normal auto sorting but with a few differences. The main one is that it no longer checks to see if it found the right color, it only checks for the enemy color. Upon finding the enemy color it will reverse the top indexer to send the enemy ball out the back of the robot. Another change to it is that instead of stopping the ball at the top line sensor, it spins is all rollers to score the balls in the goals. The way this works is that it will be scoring all the balls and upon finding the enemy color it will eject that out the back of the robot and then immediately continue scoring.
@@ -597,7 +615,6 @@ void Intake::goalSort(int allianceColor){ //The sorting code when we are cycling
   }
 }
 ```
-
 
 ## 11/10/20
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9744; Dylan, &#9745; Ian, &#9745; Jack
