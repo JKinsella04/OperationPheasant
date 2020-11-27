@@ -656,5 +656,84 @@ We spent the whole day practicing Driver Skills. Throughout the practice Derek w
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9744; Dylan, &#9744; Ian, &#9745; Jack
 Today we hosted a scrimmage that consisted of 4 teams, 9447B, 9447Z, 3859W, and 9447H(us). The scrimmage went from 2:30 to 4:00. We did 10 qualification matches and then did a best of three for finals. We paired with 3859W for finals and won the best of three with them. This scrimmage was very good in helping us learn about what we need to practice. The main thing we have to do is continue practicing both driving and programming. The auto sorting could use a little bit more tuning but the robot is good and all we need to do now is become good at driving and programming it. 
 
-<!-- ## 11/17/20
-### Attendance: &#9744; Brody, &#9744; Derek, &#9744; Dylan, &#9744; Ian, &#9744; Jack -->
+## 11/17/20
+### Attendance: &#9744; Brody, &#9745; Derek, &#9744; Dylan, &#9745; Ian, &#9745; Jack
+Today we focused on practicing. We spent most the day just working on the autonomous phase and spent the last thirty minutes practicing driving. In this time we were able to create an autonomous routine that scores scores a ball in every goal in our home row in the 15 seconds. With this autonomous we are confident that we will be able to do well in our first tournament.
+
+## 11/21/20
+### Attendance: &#9744; Brody, &#9745; Derek, &#9744; Dylan, &#9745; Ian, &#9745; Jack
+This competition was a very good one. We won all of our qualifier matches and won every auton except one which we tied. We ended qualifiers with 14WP/39AP/70SP. We also won the excellence award since we placed high in qualifications, high in skills, made it to finals, and did well in our interview.
+The only things we want to improve about our robot is the intakes as they had some inconsistencies and just more autonomous and driver practice. We are very happy with how our robot performed today and will spend our time between this and our next competition practicing as much as we can.
+
+| Rank | Team Number | W-L-T | WP | AP | SP |
+|------|-------------|-------|----|----|----|
+| 1    | 61317A      | 7-0-0 | 14 | 42 | 66 |
+| 2    | 9447H       | 7-0-0 | 14 | 39 | 70 |
+| 3    | 1223Y       | 6-1-0 | 12 | 30 | 59 |
+| 4    | 9447B       | 5-2-0 | 10 | 33 | 71 |
+| 5    | 3796E       | 5-2-0 | 10 | 24 | 71 |
+| 6    | 97671A      | 3-4-0 | 6  | 24 | 82 |
+| 7    | 97671C      | 3-4-0 | 6  | 21 | 68 |
+| 8    | 3796F       | 3-4-0 | 6  | 18 | 78 |
+| 9    | 3796B       | 3-4-0 | 6  | 18 | 47 |
+| 10   | 9880A       | 3-4-0 | 6  | 15 | 76 |
+| 11   | 9880C       | 3-4-0 | 6  | 12 | 70 |
+| 12   | 3796A       | 2-5-0 | 4  | 18 | 67 |
+| 13   | 3796D       | 2-5-0 | 4  | 15 | 70 |
+| 14   | 3796C       | 2-5-0 | 4  | 15 | 59 |
+| 15   | 97671B      | 1-6-0 | 2  | 9  | 64 |
+| 16   | 9880D       | 1-6-0 | 2  | 3  | 66 |
+
+| Our Matches | Red Alliance    | Blue Alliance  | Auton Winner | Score   |
+|-------------|-----------------|----------------|--------------|---------|
+| Q1          | 9447B & 97671C  | **9447H** & 3796E  | Tie          | 11 - **26** |
+| Q7          | **9447H** & 3796A   | 3796B & 3796D  | Red          | **14** - 8  |
+| Q11         | **9447H** & 61317A  | 9447B & 3796F  | Red          | **24** - 16  |
+| Q16         | 9880A & 9880D   | **9447H** & 3796D  | Blue         | 12 - **25** |
+| Q20         | 3796C & 3796B   | **9447H** & 97671B | Blue         | 6 - **67**  |
+| Q23         | 97671A & 97671B | **9447H** & 3796C  | Blue         | 6 - **42**  |
+| Q27         | **9447H** & 1223Y   | 9880C & 9880D  | Red          | **30** - 6  |
+| QF 1-1      | **9447H** & 61317A  | 3796C & 97671B | Red          | **66** - 3  |
+| SF 1-1      | **9447H** & 61317A  | 97671A & 3796B | Red          | **24** - 7  |
+| F 1-1       | **9447H** & 61317A  | 9447B & 3796F  | Blue         | 8 - **30**  |
+
+## 11/24/20
+### Attendance: &#9744; Brody, &#9744; Derek, &#9745; Dylan, &#9744; Ian, &#9745; Jack
+Today we spent our practice fixing the problems we noticed with our robot and our code from the tournament. We decided that since the traction wheels in the drive base were not very effective at stopping us from getting pushed that we would remove the traction wheels entirely and just have 4 omni wheels. While doing this does leave us susceptible to be being pushed from the side we are able to move the front motors on the drive base back and connect the two motors together. This change is worth being able to be pushed because now we will have a stronger drive base and with the motors being farther back we can improve on the path that the balls take so the balls will move through our robot much smoother. Today we also made changes to our code. At the competition we noticed our slew code in our `Chassis::turn();` and `Chassis::drive();` was not performing how we wanted it to so we altered the member functions to now work in a specific way. The robot will use the slew rate acceleration code until the speed it gets to from the slew code reaches the same output as the PD loop. Upon that happening it will use the PD loop to determine the speed of the motors. This allows for a steady acceleration from the slew code which then perfectly transitions into the steady decceleration of the PD loop. We also added a few more features into the code such as allowing us to run the `Intake::autoSort();` member function while calling `Chassis::drive();` or `Chassis::turn();`. The final change we made to our code was we also fixed the `Chassis::withHeading();` member function. Whenever we call `Chassis::drive();` we can also call `Chassis::withHeading();` which will tell the robot what degree it should be facing. This will allow us to either keep the robot straight while driving or we can tell it to go to any other degree and then it will begin to curve while driving to it's target. This capability will allow us to drive in a curve-like manner if we need to for the autonomous phases. The last thing we did today was we also designed a new intake design. The new design uses fully static intakes and instead of track and a wheel it uses two flex wheels on each intake. They will be connected by 12 tooth sprockets with chain. Our reasoning for making them completely static is that the flex wheels will flex as much as they need to, to allow the balls to enter the robot. The design is very simple and since they are completely static they are very strong which was a problem with our current intakes. We are very exicted to try and test out these intakes since from what we saw at the competition in Greenville no one in our state seems to be using the new flex wheels.
+
+```cpp
+switch (drive_theta){
+  case 0: {
+    if(abs(headDifference) < 180){
+      LOutput -=correction_rate;
+      ROutput +=correction_rate;
+    }else{
+      LOutput +=correction_rate;
+      ROutput -=correction_rate;
+    }
+  break;
+  }
+  default:{
+    if(averageheading < drive_theta && averageheading!=0){
+      LOutput +=correction_rate;
+      ROutput -=correction_rate;
+    } else if(averageheading > drive_theta && averageheading!=0){
+      LOutput -=correction_rate;
+      ROutput +=correction_rate;
+    }
+    if(headDifference >180 && averageheading ==0){
+      LOutput -=correction_rate;
+      ROutput +=correction_rate;
+    }else if(headDifference <180 && averageheading ==0){
+      LOutput +=correction_rate;
+      ROutput -=correction_rate;
+    }
+  break;
+  }
+}
+```
+
+<img src="././_images/11-November/11-24-20/intake_alone.png" alt="intake_alone.png" style="width: 200px;"/>
+<img src="././_images/11-November/11-24-20/intake_on_robot.png" alt="intake_on_robot.png" style="width: 200px;"/>
+<img src="././_images/11-November/11-24-20/intake_other_angle.png" alt="intake_other_angle.png" style="width: 200px;"/>
+<img src="././_images/11-November/11-24-20/intake_top.png" alt="intake_top.png" style="width: 200px;"/>
