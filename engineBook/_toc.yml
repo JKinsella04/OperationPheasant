@@ -1,14 +1,29 @@
 - file: intro
-- file: 1-gameDescription
-- file: 2-gameObjects&Elements
-- file: 3-fieldOverview
-- file: 4-scoringDetails
-- file: 5-terminology
-- file: 6-gameRules
-- file: 7-initialGoals
-- file: 8-teamStandards
-- file: 9-designBrainstorming
-- file: 10-motorSpecs
-- file: 11-teamIntros
-- file: 12-progressEntries
+
+- part: Change Up Game Description
+  chapters:
+    - file: 1-gameDescription
+    - file: 2-gameObjects&Elements
+    - file: 3-fieldOverview
+    - file: 4-scoringDetails
+    - file: 5-terminology
+    - file: 6-gameRules
+- part: Beginning
+  chapters:
+    - file: 7-initialGoals
+    - file: 8-teamStandards
+    - file: 9-designBrainstorming
+    - file: 10-motorSpecs
+    - file: 11-teamIntros
+- part: Progress Entries
+  chapters:
+    - file: 12-1-progressEntries-April
+    - file: 12-2-progressEntries-May
+    - file: 12-3-progressEntries-June
+    - file: 12-4-progressEntries-July
+    - file: 12-5-progressEntries-August
+    - file: 12-6-progressEntries-September
+    - file: 12-7-progressEntries-October
+    - file: 12-8-progressEntries-November
+    - file: 12-9-progressEntries-December
 

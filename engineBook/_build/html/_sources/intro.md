@@ -5,5 +5,5 @@
 
 ## Some Preamble
 This Engineering Notebook was created with Jupyter-book and is hosted on our free github website.
-The Table of Contents is to the Left right under our logo and search bar.
-> The date of every progress entry will show up on the right side once you go to the progress entry page.
+The Table of Contents is to the Left right under our team logo and search bar.
+> Our progress Entries are divided into sections by month. Each individual progress entry date will be listed on the right when looking at each month's entries.
