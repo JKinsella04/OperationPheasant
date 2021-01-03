@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome Page &#8212; 9447H - Engineering Notebook</title>
+    <title>&lt;no title&gt; &#8212; 9447H - Engineering Notebook</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Change Up Game Description" href="1-gameDescription.html" />
+    <link rel="prev" title="January Progress Entries" href="12-10-progressEntries-January.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -71,7 +71,7 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="#">
+  <a class="reference internal" href="intro.html">
    Welcome Page
   </a>
  </li>
@@ -243,9 +243,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/test.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -270,16 +270,7 @@
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#some-preamble">
-   Some Preamble
-  </a>
-  <ul class="nav section-nav flex-column">
-  </ul>
- </li>
-</ul>
-
+            
         </nav>
     </div>
 </div>
@@ -288,21 +279,87 @@
         
               <div>
                 
-  <div class="section" id="welcome-page">
-<h1>Welcome Page<a class="headerlink" href="#welcome-page" title="Permalink to this headline">¶</a></h1>
-<img src="././_images/beginning/v1logo.png" alt="/images/beginning/v1logo.png" width="1000px;" />
-<div class="section" id="some-preamble">
-<h2>Some Preamble<a class="headerlink" href="#some-preamble" title="Permalink to this headline">¶</a></h2>
-<p>This Engineering Notebook was created with Jupyter-book and is hosted on our free github website through github-pages.
-The Table of Contents is to the Left right under our team logo and search bar.</p>
-<blockquote>
-<div><p>Our progress Entries are divided into sections by month. Each individual progress entry date will be listed on the right when looking at each month’s entries.</p>
-</div></blockquote>
-<div class="toctree-wrapper compound">
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+ <span class="s2">&quot;cells&quot;</span><span class="p">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+   <span class="s2">&quot;cell_type&quot;</span><span class="p">:</span> <span class="s2">&quot;code&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;execution_count&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+   <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+   <span class="s2">&quot;outputs&quot;</span><span class="p">:</span> <span class="p">[],</span>
+   <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;import chart_studio.plotly as py</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;import numpy as np</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;data = [dict(</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;        visible = False,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;        line=dict(color=&#39;#00CED1&#39;, width=6),</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;        name = &#39;𝜈 = &#39;+str(step),</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;        x = np.arange(0,10,0.01),</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;        y = np.sin(step*np.arange(0,10,0.01))) for step in np.arange(0,5,0.1)]</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;data[10][&#39;visible&#39;] = True</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;steps = []</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;for i in range(len(data)):</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    step = dict(</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;        method = &#39;restyle&#39;,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;        args = [&#39;visible&#39;, [False] * len(data)],</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    )</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    step[&#39;args&#39;][1][i] = True # Toggle i&#39;th trace to </span><span class="se">\&quot;</span><span class="s2">visible</span><span class="se">\&quot;\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    steps.append(step)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sliders = [dict(</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    active = 10,</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    currentvalue = {</span><span class="se">\&quot;</span><span class="s2">prefix</span><span class="se">\&quot;</span><span class="s2">: </span><span class="se">\&quot;</span><span class="s2">Frequency: </span><span class="se">\&quot;</span><span class="s2">},</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    pad = {</span><span class="se">\&quot;</span><span class="s2">t</span><span class="se">\&quot;</span><span class="s2">: 50},</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    steps = steps</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;)]</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;layout = dict(sliders=sliders)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;fig = dict(data=data, layout=layout)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;py.iplot(fig, filename=&#39;Sine Wave Slider&#39;)&quot;</span>
+   <span class="p">]</span>
+  <span class="p">}</span>
+ <span class="p">],</span>
+ <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;kernelspec&quot;</span><span class="p">:</span> <span class="p">{</span>
+   <span class="s2">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Python 3&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;language&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;python3&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;language_info&quot;</span><span class="p">:</span> <span class="p">{</span>
+   <span class="s2">&quot;codemirror_mode&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ipython&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="mi">3</span>
+   <span class="p">},</span>
+   <span class="s2">&quot;file_extension&quot;</span><span class="p">:</span> <span class="s2">&quot;.py&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;mimetype&quot;</span><span class="p">:</span> <span class="s2">&quot;text/x-python&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;nbconvert_exporter&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;pygments_lexer&quot;</span><span class="p">:</span> <span class="s2">&quot;ipython3&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;3.7.4&quot;</span>
+  <span class="p">}</span>
+ <span class="p">},</span>
+ <span class="s2">&quot;nbformat&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+ <span class="s2">&quot;nbformat_minor&quot;</span><span class="p">:</span> <span class="mi">4</span>
+<span class="p">}</span>
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
 </div>
-<div class="toctree-wrapper compound">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">53</span><span class="n">aa311c9b13</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>   <span class="p">{</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>    <span class="s2">&quot;cell_type&quot;</span><span class="p">:</span> <span class="s2">&quot;code&quot;</span><span class="p">,</span>
+<span class="ne">----&gt; </span><span class="mi">5</span>    <span class="s2">&quot;execution_count&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>    <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>    <span class="s2">&quot;outputs&quot;</span><span class="p">:</span> <span class="p">[],</span>
+
+<span class="ne">NameError</span>: name &#39;null&#39; is not defined
+</pre></div>
 </div>
 </div>
 </div>
@@ -335,7 +392,7 @@ The Table of Contents is to the Left right under our team logo and search bar.</
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="1-gameDescription.html" title="next page">Change Up Game Description</a>
+    <a class='left-prev' id="prev-link" href="12-10-progressEntries-January.html" title="previous page">January Progress Entries</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

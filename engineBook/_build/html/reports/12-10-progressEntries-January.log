@@ -1,0 +1,64 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 1082, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 579, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 536, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 827, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/usr/local/lib/python3.7/dist-packages/nbclient/client.py", line 735, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import chart_studio.plotly as py
+import numpy as np
+
+data = [dict(
+        visible = False,
+        line=dict(color='#00CED1', width=6),
+        name = '𝜈 = '+str(step),
+        x = np.arange(0,10,0.01),
+        y = np.sin(step*np.arange(0,10,0.01))) for step in np.arange(0,5,0.1)]
+data[10]['visible'] = True
+
+steps = []
+for i in range(len(data)):
+    step = dict(
+        method = 'restyle',
+        args = ['visible', [False] * len(data)],
+    )
+    step['args'][1][i] = True # Toggle i'th trace to "visible"
+    steps.append(step)
+
+sliders = [dict(
+    active = 10,
+    currentvalue = {"prefix": "Frequency: "},
+    pad = {"t": 50},
+    steps = steps
+)]
+
+layout = dict(sliders=sliders)
+fig = dict(data=data, layout=layout)
+
+py.iplot(fig, filename='Sine Wave Slider')
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+[0;32m<ipython-input-1-c70d0464f0e0>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0;32mimport[0m [0mchart_studio[0m[0;34m.[0m[0mplotly[0m [0;32mas[0m [0mpy[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0;32mimport[0m [0mnumpy[0m [0;32mas[0m [0mnp[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      3[0m [0;34m[0m[0m
+[1;32m      4[0m data = [dict(
+[1;32m      5[0m         [0mvisible[0m [0;34m=[0m [0;32mFalse[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mModuleNotFoundError[0m: No module named 'chart_studio'
+ModuleNotFoundError: No module named 'chart_studio'
+
