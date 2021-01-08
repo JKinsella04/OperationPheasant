@@ -101,6 +101,12 @@ void Intake::dropBall(){
 ### Attendance: &#9745; Brody, &#9744; Derek, &#9744; Dylan, &#9744; Ian, &#9745; Jack
 For our tournament on January 23rd we want to be fully prepared for every aspect of it. To do this we are trying out a lot more tactics then we have never done in the past. In addition to practicing our skills runs to get the highest possible skills score we also want to do well in the qualifier and elimination bracket. Looking back at our first tournament in Greenville at JL Mann we did really well in qualifiers by winning 6 of our 7 auton phases and tieing the last one. But in finals, we lost both the auton phase and the match. For our tournament at West Ashley we have been working on our 15 second auton a lot and it is a lot more consistent than the one we brought to JL Mann. The final preparation we are doing to ensure that we are ready for our next tournament is that we have started working with another team. We decided on doing this because it will allow us to begin practicing and strategizing with them so during the tournament we are more prepared then we would be normally. We talked with 3859W and together we designed an autonmous routine where we will control 6 goals during the autonmous phase. Our routine will set the match score to 61-7 asssuming the opposing alliance does not score any points. If the opposing alliance scores their home row and descores all of our balls from their home row we will still win by 9 points. Today is the day that we are officialy saying that we finished our 15 second autonomous routine. We are very happy with and think it will do very well at our upcoming tournament. We are also happy with our skills auton but believe it can be improved upon. 
 
+%%HTML
+<div align="middle">
+<video width="80%" controls>
+      <source src="././_images/1-January/1-5-21/15-sec-auton.mp4" type="video/mp4">
+</video></div>
+
 ## West Ashley Pre-Tournament Scouting
 | Category             | 3859W    | 61317A   | 1223Y    | 9447B    | 9623X    | 79267A   |
 |----------------------|----------|----------|----------|----------|----------|----------|
